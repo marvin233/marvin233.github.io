@@ -554,7 +554,7 @@ journal      = {Proc. {VLDB} Endow.},
 volume       = {17},
 number       = {3},
 pages        = {359--372},
-year         = {2023},
+year         = {2023}
 }`,
                 'www24-VAE': `@inproceedings{DBLP:conf/www/WangPMWLPR0LZLX24,
 author       = {Zexin Wang and
@@ -578,20 +578,47 @@ publisher    = {{ACM}},
 year         = {2024},
 doi          = {10.1145/3589334.3645710}
 }`,
-                'fse24-AutoRCA': `@article{DBLP:journals/corr/abs-2401-13810,
-author       = {Xuchao Zhang and
-                Supriyo Ghosh and
-                Chetan Bansal and
-                Rujia Wang and
-                Minghua Ma and
-                Yu Kang and
-                Saravan Rajmohan},
-title        = {Automated Root Causing of Cloud Incidents using In-Context Learning
-                with {GPT-4}},
-journal      = {CoRR},
-volume       = {abs/2401.13810},
-year         = {2024},
-doi          = {10.48550/ARXIV.2401.13810}
+                'fse24-AutoRCA': `@inproceedings{DBLP:conf/sigsoft/ZhangGBWM0R24,
+  author       = {Xuchao Zhang and
+                  Supriyo Ghosh and
+                  Chetan Bansal and
+                  Rujia Wang and
+                  Minghua Ma and
+                  Yu Kang and
+                  Saravan Rajmohan},
+  title        = {Automated Root Causing of Cloud Incidents using In-Context Learning
+                  with {GPT-4}},
+  booktitle    = {Companion Proceedings of the 32nd {ACM} International Conference on
+                  the Foundations of Software Engineering, {FSE} 2024, Porto de Galinhas,
+                  Brazil, July 15-19, 2024},
+  pages        = {266--277},
+  publisher    = {{ACM}},
+  year         = {2024},
+  url          = {https://doi.org/10.1145/3663529.3663846},
+  doi          = {10.1145/3663529.3663846}
+}`,
+                'fse24-monitorassistant': `@inproceedings{DBLP:conf/sigsoft/YuMZQ0BRDPPL024,
+  author       = {Zhaoyang Yu and
+                  Minghua Ma and
+                  Chaoyun Zhang and
+                  Si Qin and
+                  Yu Kang and
+                  Chetan Bansal and
+                  Saravan Rajmohan and
+                  Yingnong Dang and
+                  Changhua Pei and
+                  Dan Pei and
+                  Qingwei Lin and
+                  Dongmei Zhang},
+  title        = {MonitorAssistant: Simplifying Cloud Service Monitoring via Large Language
+                  Models},
+  booktitle    = {Companion Proceedings of the 32nd {ACM} International Conference on
+                  the Foundations of Software Engineering, {FSE} 2024, Porto de Galinhas,
+                  Brazil, July 15-19, 2024},
+  pages        = {38--49},
+  publisher    = {{ACM}},
+  year         = {2024},
+  url          = {https://doi.org/10.1145/3663529.3663826}
 }`,
                 'tnsm19-period': `@article{DBLP:journals/tnsm/ZhaoZWMZLZP19,
 author       = {Nengwen Zhao and
