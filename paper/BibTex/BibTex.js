@@ -282,19 +282,19 @@ const bibtexData = {
   author={Zhang, Shenglin and Ji, Yuhe and Luan, Jiaqi and Nie, Xiaohui and Chen, Zi’ang and Ma, Minghua and Sun, Yongqian and Pei, Dan},
   journal={Automated Software Engineering},
   year={2024}
-}`
+}`,
 'arxiv-aiopslab': `@article{chen2024aiopslab,
   title={AIOpsLab: A Holistic Framework to Evaluate AI Agents for Enabling Autonomous Clouds},
   author={Chen, Yinfang and Shetty, Manish and Somashekar, Gagan and Ma, Minghua and Simmhan, Yogesh and Mace, Jonathan and Bansal, Chetan and Wang, Rujia and Rajmohan, Saravan},
   year={2024},
   journal={Arxiv}
-}`
+}`,
 'arxiv-gui': `@article{zhang2024large,
   title={Large language model-brained gui agents: A survey},
   author={Zhang, Chaoyun and He, Shilin and Qian, Jiaxu and Li, Bowen and Li, Liqun and Qin, Si and Kang, Yu and Ma, Minghua and Lin, Qingwei and Rajmohan, Saravan and others},
   journal={arXiv preprint arXiv:2411.18279},
   year={2024}
-}`
+}`,
 'tosem-diagnosis': `@article{zhang2024failure,
   title={Failure diagnosis in microservice systems: A comprehensive survey and analysis},
   author={Zhang, Shenglin and Xia, Sibo and Fan, Wenzhao and Shi, Binpeng and Xiong, Xiao and Zhong, Zhenyu and Ma, Minghua and Sun, Yongqian and Pei, Dan},
