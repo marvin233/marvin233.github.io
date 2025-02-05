@@ -300,8 +300,94 @@ const bibtexData = {
   author={Zhang, Shenglin and Xia, Sibo and Fan, Wenzhao and Shi, Binpeng and Xiong, Xiao and Zhong, Zhenyu and Ma, Minghua and Sun, Yongqian and Pei, Dan},
   journal={ACM Transactions on Software Engineering and Methodology},
   year={2025}
+}`,
+'shetty2024building': `@inproceedings{shetty2024building,
+  title={Building AI Agents for Autonomous Clouds: Challenges and Design Principles},
+  author={Shetty, Manish and Chen, Yinfang and Somashekar, Gagan and Ma, Minghua and Simmhan, Yogesh and Zhang, Xuchao and Mace, Jonathan and Vandevoorde, Dax and Las-Casas, Pedro and Gupta, Shachee Mishra and others},
+  booktitle={Proceedings of the 2024 ACM Symposium on Cloud Computing},
+  pages={99--110},
+  year={2024}
+}`,
+'zhang2024deoxys': `@inproceedings{zhang2024deoxys,
+  title={Deoxys: A Causal Inference Engine for Unhealthy Node Mitigation in Large-scale Cloud Infrastructure},
+  author={Zhang, Chaoyun and Yao, Randolph and Qin, Si and Li, Ze and Agrawal, Shekhar and Mishra, Binit R and Tran, Tri and Ma, Minghua and Lin, Qingwei and Chintalapati, Murali and others},
+  booktitle={Proceedings of the 2024 ACM Symposium on Cloud Computing},
+  pages={361--379},
+  year={2024}
+}`,
+'zhang2024end': `@inproceedings{zhang2024end,
+  title={End-to-end automl for unsupervised log anomaly detection},
+  author={Zhang, Shenglin and Ji, Yuhe and Luan, Jiaqi and Nie, Xiaohui and Chen, Ziang and Ma, Minghua and Sun, Yongqian and Pei, Dan},
+  booktitle={Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering},
+  pages={1680--1692},
+  year={2024}
+}`,
+'tao2024giving': `@inproceedings{tao2024giving,
+  title={Giving Every Modality a Voice in Microservice Failure Diagnosis via Multimodal Adaptive Optimization},
+  author={Tao, Lei and Zhang, Shenglin and Jia, Zedong and Sun, Jinrui and Ma, Minghua and Li, Zhengdan and Sun, Yongqian and Yang, Canqun and Zhang, Yuzhi and Pei, Dan},
+  booktitle={Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering},
+  pages={1107--1119},
+  year={2024}
+}`,  
+'sun2024art': `@inproceedings{sun2024art,
+  title={ART: A Unified Unsupervised Framework for Incident Management in Microservice Systems},
+  author={Sun, Yongqian and Shi, Binpeng and Mao, Mingyu and Ma, Minghua and Xia, Sibo and Zhang, Shenglin and Pei, Dan},
+  booktitle={Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering},
+  pages={1183--1194},
+  year={2024}
+}`, 
+'zhang2024enhanced': `@inproceedings{zhang2024enhanced,
+  title={Enhanced Fine-Tuning of Lightweight Domain-Specific Q\&A Model Based on Large Language Models},
+  author={Zhang, Shenglin and Zhu, Pengtian and Ma, Minghua and Wang, Jiagang and Sun, Yongqian and Li, Dongwen and Wang, Jingyu and Guo, Qianying and Hua, Xiaolei and Zhu, Lin and others},
+  booktitle={2024 IEEE 35th International Symposium on Software Reliability Engineering Workshops (ISSREW)},
+  pages={61--66},
+  year={2024},
+  organization={IEEE}
+}`, 
+'liu2024early': `@inproceedings{liu2024early,
+  title={Early Bird: Ensuring Reliability of Cloud Systems Through Early Failure Prediction},
+  author={Liu, Yudong and Ma, Minghua and Zhao, Pu and Li, Tianci and Qiao, Bo and Li, Shuo and Li, Ze and Chintalapati, Murali and Dang, Yingnong and Bansal, Chetan and others},
+  booktitle={2024 IEEE 35th International Symposium on Software Reliability Engineering Workshops (ISSREW)},
+  pages={49--54},
+  year={2024},
+  organization={IEEE}
+}`,
+'wang2024large': `@inproceedings{wang2024large,
+  title={Large Language Models Can Provide Accurate and Interpretable Incident Triage},
+  author={Wang, Zexin and Li, Jianhui and Ma, Minghua and Li, Ze and Kang, Yu and Zhang, Chaoyun and Bansal, Chetan and Chintalapati, Murali and Rajmohan, Saravan and Lin, Qingwei and others},
+  booktitle={2024 IEEE 35th International Symposium on Software Reliability Engineering (ISSRE)},
+  pages={523--534},
+  year={2024},
+  organization={IEEE}
+}`,
+'li2024can': `@inproceedings{li2024can,
+  title={Can We Trust Auto-Mitigation? Improving Cloud Failure Prediction with Uncertain Positive Learning},
+  author={Li, Haozhe and Ma, Minghua and Liu, Yudong and Zhao, Pu and Li, Shuo and Li, Ze and Chintalapati, Murali and Dang, Yingnong and Bansal, Chetan and Rajmohan, Saravan and others},
+  booktitle={2024 IEEE 35th International Symposium on Software Reliability Engineering (ISSRE)},
+  pages={499--510},
+  year={2024},
+  organization={IEEE}
+}`,
+'yu2024pre': `@inproceedings{yu2024pre,
+  title={Pre-trained kpi anomaly detection model through disentangled transformer},
+  author={Yu, Zhaoyang and Pei, Changhua and Wang, Xin and Ma, Minghua and Bansal, Chetan and Rajmohan, Saravan and Lin, Qingwei and Zhang, Dongmei and Wen, Xidao and Li, Jianhui and others},
+  booktitle={Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+  pages={6190--6201},
+  year={2024}
+}`,
+'xie2024microservice': `@inproceedings{xie2024microservice,
+  title={Microservice root cause analysis with limited observability through intervention recognition in the latent space},
+  author={Xie, Zhe and Zhang, Shenglin and Geng, Yitong and Zhang, Yao and Ma, Minghua and Nie, Xiaohui and Yao, Zhenhe and Xu, Longlong and Sun, Yongqian and Li, Wentao and others},
+  booktitle={Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+  pages={6049--6060},
+  year={2024}
+}`,
+'ding2023everything': `@article{ding2023everything,
+  title={Everything of thoughts: Defying the law of penrose triangle for thought generation},
+  author={Ding, Ruomeng and Zhang, Chaoyun and Wang, Lu and Xu, Yong and Ma, Minghua and Zhang, Wei and Qin, Si and Rajmohan, Saravan and Lin, Qingwei and Zhang, Dongmei},
+  journal={arXiv preprint arXiv:2311.04254},
+  year={2023}
 }`
-  
 };
 return bibtexData
 }
