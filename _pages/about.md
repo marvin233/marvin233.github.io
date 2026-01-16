@@ -7,8 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-## Dr. Minghua Ma
-
 **Senior Researcher, [M365 Research Group, Microsoft](https://www.microsoft.com/en-us/research/group/m365-research/)**
 
 Ph.D., Tsinghua University, 2021  
