@@ -9,28 +9,552 @@ author_profile: true
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
-{% include base_path %}
+* corresponding author, <sup>+</sup> equal contribution, 📜 paper, 💻 code, 💽 dataset, and 📎 BibTeX.
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<script src="./paper/BibTex/BibTex.js"></script>
+<script>
+    let lastCopiedId = null;
 
+    function copyBibTeX(event, id) {
+        event.preventDefault();
+        const bibtexData = get_bibtex();
+        // Get the BibTeX text for the clicked ID
+        const bibtex = bibtexData[id];
+
+        // Create a temporary textarea element to hold the text
+        const textarea = document.createElement('textarea');
+        textarea.value = bibtex;
+        document.body.appendChild(textarea);
+
+        // Select the text in the textarea and copy it to the clipboard
+        textarea.select();
+        textarea.setSelectionRange(0, 99999); // For mobile devices
+        document.execCommand('copy');
+
+        // Remove the temporary textarea element
+        document.body.removeChild(textarea);
+
+        // Update the link text to "Copied!" and reset the previous one
+        if (lastCopiedId) {
+            document.getElementById(lastCopiedId).textContent = 'BibTeX';
+        }
+        document.getElementById(id).textContent = "Copied!";
+        lastCopiedId = id;
+
+        // Show the notification popup
+        const notification = document.getElementById('notification');
+        notification.style.display = 'block';
+
+        // Hide the notification popup after 3 seconds
+        setTimeout(() => {
+            notification.style.display = 'none';
+        }, 99999);
+    }
+</script>
+
+<h3>Survey/Benchmark</h3>
+<ul class="space_list">
+
+
+<li>Triage in Software Engineering: A Systematic Review of Research and Practice
+<a href="https://arxiv.org/abs/2511.08607" target="_blank">📜</a>
+<br/> Yongxin Zhao, Shenglin Zhang, Yujia Wu, Yuxin Sun, Yongqian Sun, Dan Pei, Chetan Bansal, <u>Minghua Ma*</u>
+</li>
+    
+
+<li>Can Language Models Go Beyond Coding? Assessing the Capability of Language Models to Build Real-World Systems
+<a href="https://arxiv.org/abs/2511.00780" target="_blank">📜</a>
+<br/> Chenyu Zhao, Shenglin Zhang, Zeshun Huang, Weilin Jin, Yongqian Sun, Dan Pei, Chaoyun Zhang, Qingwei Lin, Chetan Bansal, Saravan Rajmohan, <u>Minghua Ma*</u>
+</li>
+
+<li>GUI-360: A Comprehensive Dataset and Benchmark for Computer-Using Agents
+<a href="https://arxiv.org/abs/2511.04307" target="_blank">📜</a>
+<br/> Jian Mu, Chaoyun Zhang, Chiming Ni, Lu Wang, Bo Qiao, Kartik Mathur, Qianhui Wu, Yuhang Xie, Xiaojun Ma, Mengyu Zhou, Si Qin, Liqun Li, Yu Kang, <u>Minghua Ma</u>, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang
+</li>
+    
+<li><strong>FSE'25</strong> OpsEval: A Comprehensive Benchmark Suite for Evaluating Large Language
+Models’ Capability in IT Operations Domain 
+<a href="https://arxiv.org/abs/2310.07637" target="_blank">📜</a>
+<br/> Yuhe Liu, Changhua Pei, Longlong Xu, Bohan Chen, Mingze Sun, Zhirui Zhang, Yongqian Sun, Shenglin Zhang, Kun Wang, 
+Haiming Zhang, Jianhui Li, Gaogang Xie, Xidao Wen, Xiaohui Nie, <u>Minghua Ma</u>, Dan Pei
+</li>
+
+<li><strong>MLSys'25</strong> AIOpsLab: A Holistic Framework for Evaluating AI Agents for Enabling Autonomous Cloud
+<a href="https://www.microsoft.com/en-us/research/publication/aiopslab-a-holistic-framework-for-evaluating-ai-agents-for-enabling-autonomous-cloud/" target="_blank">📜</a>
+<a href="https://github.com/microsoft/aiopslab" target="_blank">💻</a>
+<a class="bib-link" href="#" id="arxiv-aiopslab" onclick="copyBibTeX(event, 'arxiv-aiopslab')">📎</a>
+<br/>
+Yinfang Chen, Manish Shetty, Gagan Somashekar, <u>Minghua Ma*</u>, Yogesh Simmhan, Jonathan Mace, Chetan Bansal, Rujia Wang, Saravan Rajmohan                            
+</li>   
+
+<li><strong>TMLR'25</strong> Large Language Model-Brained GUI Agents: A Survey
+<a href="https://arxiv.org/abs/2411.18279" target="_blank">📜</a>
+<a class="bib-link" href="#" id="arxiv-gui" onclick="copyBibTeX(event, 'arxiv-gui')">📎</a>
+<br/>
+Chaoyun Zhang, Shilin He, Jiaxu Qian, Bowen Li, Liqun Li, Si Qin, Yu Kang, <u>Minghua Ma</u>, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang, Qi Zhang
+</li>
+
+<li><strong>TOSEM'25</strong> Failure Diagnosis in Microservice Systems: A Comprehensive Survey and Analysis
+<a href="https://arxiv.org/abs/2407.01710" target="_blank">📜</a>
+<a class="bib-link" href="#" id="tosem-diagnosis" onclick="copyBibTeX(event, 'tosem-diagnosis')">📎</a>
+<br/>
+Shenglin Zhang, Sibo Xia, Wenzhao Fan, Binpeng Shi, Xiao Xiong, Zhenyu Zhong, <u>Minghua Ma</u>, Yongqian Sun, Dan Pei
+</li>
+
+<li>A Survey of Time Series Anomaly Detection Methods in the AIOps Domain
+<a href="https://arxiv.org/abs/2308.00393" target="_blank">📜</a>
+<a class="bib-link" href="#" id="arxiv-time_series" onclick="copyBibTeX(event, 'arxiv-time_series')">📎</a>
+<br/>
+Zhenyu Zhong and Qiliang Fan, Jiacheng Zhang, <u>Minghua Ma</u>, Shenglin Zhang,
+Yongqian Sun, Qingwei Lin, Yuzhi Zhang, Dan Pei
+</li>
+
+<li>Constructing Large-Scale Real-World Benchmark Datasets for AIOps
+<a href="https://arxiv.org/abs/2208.03938" target="_blank">📜</a>
+<a href="https://github.com/NetManAIOps" target="_blank">💽</a>
+<a class="bib-link" href="#" id="arxiv-benchmark_dataset" onclick="copyBibTeX(event, 'arxiv-benchmark_dataset')">📎</a>
+<br/>
+Zeyan Li, Nengwen Zhao, Shenglin Zhang, Yongqian Sun, Pengfei Chen, Xidao Wen,
+<u>Minghua Ma</u>, Dan Pei
+</li>  
+
+</ul>   
+
+
+
+
+<h3>Conference</h3>
+<ul class="space_list">
+
+<li><strong>ICSE-SEIP'25</strong> Intelligent Triage: Interpretable Incident Triage Workflow using LLM Extracted Triage Reasoning
+<br/> Jianing Liu, Hao Ren, Yu Kang, <u>Minghua Ma</u>, Fangkai Yang, Yong Xu, Xin Gao, Meng Zhang, Hongbin Wang, Xuedong Gao, Dongmei Zhang, Qi Zhang, Chetan Bansal, Saravan Rajmohan, Yingnong Dang
+</li>
+
+    
+<li><strong>LLM4Code'25</strong> A Benchmark for Language Models in Real-World System Building
+<br/> Weilin Jin, Chenyu Zhao, Zeshun Huang, Chaoyun Zhang, Qingwei Lin, Chetan Bansal, Saravan Rajmohan, Shenglin Zhang, Yongqian Sun, Dan Pei, Yifan Wu, Tong Jia, Ying Li, Zhonghai Wu, <u>Minghua Ma*</u>
+</li>
+
+    
+<li><strong>ASE'25</strong> Triangle: Empowering Incident Triage with Multi-Agent
+<a href="https://www.microsoft.com/en-us/research/publication/triangle-empowering-incident-triage-with-multi-agents/" target="_blank">📜</a>
+<a href="https://github.com/microsoft/Triangle" target="_blank">💻</a>
+<br/> Zhaoyang Yu, Aoyang Fang, <u>Minghua Ma*</u>, Jaskaran Singh Walia, Chaoyun Zhang, Shu Chi, Ze Li, Murali Chintalapati, Xuchao Zhang, Rujia Wang, Chetan Bansal, Saravan Rajmohan, Qingwei Lin, Shenglin Zhang, Dan Pei, Pinjia He
+</li>
+
+<li><strong>ISSRE'25</strong> Too Many Cooks: Assessing the Need for Multi-Source Data in Microservice Failure Diagnosis	
+<a href="https://nkcs.iops.ai/wp-content/uploads/2025/07/Xiaoyu__Empirical_Study_on_Multi_source_Failure_Diagnosis.pdf" target="_blank">📜</a>
+<br/> Shenglin Zhang, Xiaoyu Feng, Runzhou Wang, <u>Minghua Ma</u>, Wenwei Gu, Yongqian Sun, Zedong Jia, Jinrui Sun and Dan Pei
+<br/><strong>🏆 <font color="red"> IEEE the 36th ISSRE Best Research Paper Candidates</font></strong>
+</li>
+    
+<li><strong>ISSRE'25</strong> An Empirical Study of Production Incidents in Generative AI Cloud Services
+<a href="https://arxiv.org/abs/2504.08865" target="_blank">📜</a>
+<br/> Haoran Yan, Yinfang Chen, <u>Minghua Ma*</u>, Ming Wen, Shan Lu, Shenglin Zhang, Tianyin Xu, Rujia Wang, Chetan Bansal, Saravan Rajmohan, Chaoyun Zhang, Dongmei Zhang
+</li>
+    
+<li> <strong>KDD'25</strong> Large Language Models can Deliver Accurate and Interpretable Time Series Anomaly Detection
+<a href="https://arxiv.org/abs/2405.15370" target="_blank">📜</a>
+<br/>
+Jun Liu, Chaoyun Zhang, Jiaxu Qian, <u>Minghua Ma</u>, Si Qin, Chetan Bansal, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang                           
+</li>    
+
+<li> <strong>NAACL'25</strong> UFO: A UI-Focused Agent for Windows OS Interaction
+<a href="https://arxiv.org/abs/2402.07939" target="_blank">📜</a>
+<a class="bib-link" href="#" id="arxiv-ufo" onclick="copyBibTeX(event, 'arxiv-ufo')">📎</a>
+<br/>
+Chaoyun Zhang, Liqun Li, Shilin He, Xu Zhang, Bo Qiao, Si Qin, <u>Minghua Ma</u>, Yu
+Kang, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang, Qi Zhang
+
+</li>
+
+<li> <strong>SANER'25</strong> AIOpsArena: Scenario-Oriented Evaluation and Leaderboard for AIOps Algorithms in Microservices 
+<br/>
+Yongqian Sun, Jiaju Wang, Zhengdan Li, Xiaohui Nie, <u>Minghua Ma</u>, Shenglin Zhang, Yuhe Ji, Lu Zhang, Wen Long, Yongnan Luo, Hengmao Chen, Dan Pei
+</li>
+
+<li> <strong>ICDE'25</strong> AllHands: Ask Me Anything on Large-scale Verbatim Feedback via Large Language Models
+<a href="https://arxiv.org/abs/2403.15157" target="_blank">📜</a>
+<br/>
+Chaoyun Zhang, Zicheng Ma, Yuhao Wu, Shilin He, Si Qin, <u>Minghua Ma</u>, Xiaoting Qin, Yu Kang, Yuyi Liang, Xiaoyu Gou, Yajie Xue, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang, Qi Zhang
+</li>
+
+<li> <strong>SoCC'24</strong> Building AI Agents for Autonomous Clouds: Challenges and Design Principles
+<a href="https://arxiv.org/abs/2407.12165" target="_blank">📜</a>
+<a class="bib-link" href="#" id="shetty2024building" onclick="copyBibTeX(event, 'shetty2024building')">📎</a>
+<br/>
+Manish Shetty, Yinfang Chen, Gagan Somashekar, <u>Minghua Ma</u>, Yogesh Simmhan, Xuchao Zhang, Jonathan Mace, Dax Vandevoorde, Pedro Las-Casas, Shachee Mishra Gupta, Suman Nath, Chetan Bansal, Saravan Rajmohan
+
+</li>
+
+<li> <strong>SoCC'24</strong> Deoxys: A Causal Inference Engine for Unhealthy Node Mitigation in Large-scale Cloud Infrastructure 
+<a href="https://arxiv.org/abs/2410.17709" target="_blank">📜</a>
+<a class="bib-link" href="#" id="zhang2024deoxys" onclick="copyBibTeX(event, 'zhang2024deoxys')">📎</a>
+<br/>
+Chaoyun Zhang, Randolph Yao, Si Qin, Ze Li, Shekhar Agrawal, Binit Mishra, Tri Tran, <u>Minghua Ma</u>, Qingwei Lin, Murali Chintalapati, Dongmei Zhang
+
+</li>
+
+<li> <strong>ASE'24</strong> End-to-End AutoML for Unsupervised Log Anomaly Detection
+<a class="bib-link" href="#" id="zhang2024end" onclick="copyBibTeX(event, 'zhang2024end')">📎</a>
+<br/>
+Shenglin Zhang, Yuhe Ji, Jiaqi Luan, Xiaohui Nie, Zi’ang Chen, <u>Minghua Ma</u>, Yongqian Sun, Dan Pei
+</li>
+
+<li> <strong>ASE'24</strong> ART: A Unified Unsupervised Framework for Incident Management in Microservice Systems
+<a class="bib-link" href="#" id="sun2024art" onclick="copyBibTeX(event, 'sun2024art')">📎</a>
+<br/>Yongqian Sun, Binpeng Shi, Mingyu Mao, <u>Minghua Ma</u>, Sibo Xia, Shenglin Zhang, Dan Pei
+
+</li>
+<li> <strong>ISSRE'24</strong> Enhanced Fine-Tuning of Lightweight Domain-Specific Q&amp;A model Based on Large Language Models
+<a class="bib-link" href="#" id="zhang2024enhanced" onclick="copyBibTeX(event, 'zhang2024enhanced')">📎</a>
+<br/>Shenglin Zhang, Pengtian Zhu, <u>Minghua Ma</u>, Jiagang Wang, Yongqian Sun, Dongwen Li, Jingyu Wang, Qianying Guo, Xiaolei Hua, Lin Zhu, Dan Pei
+</li>
+    
+<li> <strong>ISSRE'24</strong> Early Bird: Ensuring Reliability of Cloud Systems Through Early Failure Prediction
+<a class="bib-link" href="#" id="liu2024early" onclick="copyBibTeX(event, 'liu2024early')">📎</a>
+<br/>Yudong Liu, <u>Minghua Ma*</u>, Pu Zhao, Tianci Li, Bo Qiao, Shuo Li, Ze Li, Murali Chintalapati, Yingnong Dang, Chetan Bansal, Saravan Rajmohan, Qingwei Lin, Dongmei Zhang
+<br/><strong>🏆 <font color="red"> IEEE the 35th ISSRE Best Industry Paper Candidates</font></strong>
+</li>
+    
+<li> <strong>ISSRE'24</strong> Large Language Models Can Provide Accurate and Interpretable Incident Triage
+<a class="bib-link" href="#" id="wang2024large" onclick="copyBibTeX(event, 'wang2024large')">📎</a>
+<br/>Zexin Wang, Jianhui Li, <u>Minghua Ma*</u>, Ze Li, Yu Kang, Chaoyun Zhang, Chetan Bansal, Murali Chintalapati, Saravan Rajmohan, Qingwei Lin, Dongmei Zhang, Changhua Pei, Gaogang Xie
+</li>
+    
+<li> <strong>ISSRE'24</strong> Can We Trust Auto-Mitigation? Improving Cloud Failure Prediction with Uncertain Positive Learning
+<a class="bib-link" href="#" id="li2024can" onclick="copyBibTeX(event, 'li2024can')">📎</a>
+<br/>Haozhe Li, <u>Minghua Ma*</u>, Yudong Liu, Pu Zhao, Shuo Li, Lingling Zheng, Ze Li, Murali Chintalapati, Yingnong Dang, Chetan Bansal, Saravan Rajmohan, Qingwei Lin, Dongmei Zhang
+</li>
+    
+<li> <strong>KDD'24</strong> Pre-trained KPI Anomaly Detection Model Based on
+Disentangled Transformer
+<a class="bib-link" href="#" id="yu2024pre" onclick="copyBibTeX(event, 'yu2024pre')">📎</a>
+<br/>Zhaoyang Yu, Changhua Pei, Xin Wang, <u>Minghua Ma</u>, Chetan Bansal, Saravan Rajmohan, Qingwei Lin, Dongmei Zhang, Xidao Wen, Jianhui li, Gaogang Xie, Dan Pei
+</li>
+    
+<li> <strong>KDD'24</strong> Microservice Root Cause Analysis With Limited
+Observability Through Intervention Recognition in the Latent Space
+<a class="bib-link" href="#" id="xie2024microservice" onclick="copyBibTeX(event, 'xie2024microservice')">📎</a>
+<br/>Zhe Xie, Shenglin Zhang, Yitong Geng, Yao Zhang, <u>Minghua Ma</u>, Xiaohui Nie, Zhenhe Yao, Longlong Xu, Yongqian Sun, Wentao Li, Dan Pei
+</li>
+    
+<li> <strong>ACL'24</strong> Everything of Thoughts: Defying the Law of Penrose
+Triangle for Thought Generation
+<a href="https://arxiv.org/abs/2311.04254" target="_blank">📜</a>
+<a class="bib-link" href="#" id="ding2023everything" onclick="copyBibTeX(event, 'ding2023everything')">📎</a>
+<br/>Ruomeng Ding, Chaoyun Zhang, Lu Wang, Yong Xu, <u>Minghua Ma</u>, Wei Zhang, Si Qin, Saravan Rajmohan, Qingwei Lin, Dongmei Zhang
+</li>
+    
+<li> <strong>FSE'24</strong> MonitorAssistant: Simplifying Cloud Service Monitoring via
+Large Language Models
+<a href="https://dl.acm.org/doi/pdf/10.1145/3663529.3663826" target="_blank">📜</a>
+<a class="bib-link" href="#" id="fse24-monitorassistant" onclick="copyBibTeX(event, 'fse24-monitorassistant')">📎</a>
+<br/>Zhaoyang Yu, <u>Minghua Ma*</u>, Chaoyun Zhang, Si Qin, Yu Kang, Chetan Bansal,
+Saravan Rajmohan, Yingnong Dang, Changhua Pei, Dan Pei, Qingwei Lin, Dongmei Zhang
+</li>
+    
+<li> <strong>FSE'24</strong> Automated Root Causing of Cloud Incidents using In-Context
+Learning with GPT-4
+<a href="https://arxiv.org/abs/2401.13810" target="_blank">📜</a>
+<a class="bib-link" href="#" id="fse24-AutoRCA" onclick="copyBibTeX(event, 'fse24-AutoRCA')">📎</a>
+<br/>Xuchao Zhang, Supriyo Ghosh, Chetan Bansal, Rujia Wang, <u>Minghua Ma</u>, Yu Kang,
+Saravan Rajmohan
+</li>
+    
+<li> <strong>TheWebConf'24</strong> Revisiting VAE for Unsupervised Time
+Series Anomaly Detection: A Frequency Perspective
+<a href="https://arxiv.org/pdf/2402.02820" target="_blank">📜</a>
+<a href="https://github.com/CSTCloudOps/FCVAE" target="_blank">💻</a>
+<a class="bib-link" href="#" id="www24-VAE" onclick="copyBibTeX(event, 'www24-VAE')">📎</a>
+<br/>Zexin Wang, Changhua Pei, <u>Minghua Ma</u>, Xin Wang, Zhihan Li, Dan Pei,
+Saravan Rajmohan, Dongmei Zhang, Qingwei Lin, Haiming Zhang, Jianhui li, Gaogang Xie
+</li>
+    
+<li> <strong>VLDB'24</strong> ImDiffusion: Imputed Diffusion Models for Multivariate
+Time
+Series Anomaly Detection
+<a href="https://www.vldb.org/pvldb/vol17/p359-zhang.pdf" target="_blank">📜</a>
+<a href="https://github.com/17000cyh/IMDiffusion" target="_blank">💻</a>
+<a class="bib-link" href="#" id="vldb24-ImDiffusion" onclick="copyBibTeX(event, 'vldb24-ImDiffusion')">📎</a>
+<br/>Yuhang Chen, Chaoyun Zhang, <u>Minghua Ma</u>, Yudong Liu, Ruomeng Ding, Bowen Li,
+Shilin He, Saravan Rajmohan, Qingwei Lin, Dongmei Zhang
+</li>
+    
+<li> <strong>ICSE'24</strong> Xpert: Empowering Incident Management with Query
+Recommendations via Large Language Models
+<a href="https://arxiv.org/abs/2312.11988" target="_blank">📜</a>
+<a class="bib-link" href="#" id="icse24-Xpert" onclick="copyBibTeX(event, 'icse24-Xpert')">📎</a>
+<br/>Yuxuan Jiang, Chaoyun Zhang, Shilin He, Zhihao Yang, <u>Minghua Ma</u>, Si Qin, Yu
+Kang,
+Yingnong Dang, Saravan Rajmohan, Qingwei Lin, Dongmei Zhang
+</li>
+    
+<li> <strong>EuroSys'24</strong> Automatic Root Cause Analysis via Large Language
+Models for Cloud Incidents 
+<a href="https://arxiv.org/abs/2305.15778" target="_blank">📜</a>
+<a class="bib-link" href="#" id="eurosys24-AutoRCA" onclick="copyBibTeX(event, 'eurosys24-AutoRCA')">📎</a>
+<br/>Yinfang Chen, Huaibing Xie, <u>Minghua Ma*</u>, Yu Kang, Xin Gao, Liu Shi, Yunjie Cao, Xuedong Gao, Hao Fan, Ming Wen, Jun Zeng, Supriyo Ghosh, Xuchao Zhang, Chaoyun Zhang,
+Qingwei Lin, Saravan Rajmohan, Dongmei Zhang
+</li>
+    
+<li> <strong>ISSRE'23</strong> CODEC: Cost-Effective Duration Prediction System for
+Deadline Scheduling in the Cloud
+<a href="https://ieeexplore.ieee.org/document/10301225" target="_blank">📜</a>
+<a class="bib-link" href="#" id="issre23-CODEC" onclick="copyBibTeX(event, 'issre23-CODEC')">📎</a>
+<br/> Haozhe Li, <u>Minghua Ma</u>, Yudong Liu, Si Qin, Bo Qiao, Randolph Yao,
+Harshwardhan
+Chaturvedi, Tri Tran, Murali Chintalapati, Saravan Rajmohan, Qingwei Lin and Dongmei Zhang
+</li>
+    
+<li> <strong>FSE'23</strong> Assess and Summarize: Improve Outage Understanding with
+Large Language Models
+<a href="https://arxiv.org/abs/2305.18084" target="_blank">📜</a>
+<a class="bib-link" href="#" id="fse23-Assess&amp;Summarize" onclick="copyBibTeX(event, 'fse23-Assess&amp;Summarize')">📎</a>
+<br/> Pengxiang Jin<sup>+</sup>, Shenglin Zhang<sup>+</sup>, <u>Minghua Ma</u>, Haozhe
+Li, Yu
+Kang, Liqun Li, Yudong Liu, Bo Qiao, Chaoyun Zhang, Pu Zhao, Shilin He, Federica Sarro,
+Yingnong Dang, Saravan Rajmohan, Qingwei Lin, Dongmei Zhang
+</li>
+    
+<li> <strong>FSE'23</strong> Detection is Better Than Cure - A Cloud Incidents
+Perspective
+<a href="https://dl.acm.org/doi/10.1145/3611643.3613898" target="_blank">📜</a>
+<a class="bib-link" href="#" id="fse23-detection_better" onclick="copyBibTeX(event, 'fse23-detection_better')">📎</a>
+<br/> Vaibhav Ganatra, Anjaly Parayil, Supriyo Ghosh, Yu Kang, <u>Minghua Ma</u>, Chetan
+Bansal, Suman Nath, Jonathan Mace
+</li>
+    
+<li> <strong>FSE'23</strong> TraceDiag: Adaptive, Interpretable and Efficient Root
+Cause
+Analysis on Large-Scale Microservice Systems
+<a href="https://arxiv.org/abs/2310.18740" target="_blank">📜</a>
+<a class="bib-link" href="#" id="fse23-TraceDiag" onclick="copyBibTeX(event, 'fse23-TraceDiag')">📎</a>
+<br/> Ruomeng Ding, Chaoyun Zhang, Lu Wang, Yong Xu, <u>Minghua Ma</u>, Xiaomin Wu, Meng
+Zhang, Qingjun Chen, Xin Gao, Xuedong Gao, HaoFan, Saravan Rajmohan, Qingwei Lin,
+Dongmei Zhang
+</li>
+    
+<li> <strong>KDD'23</strong> Robust Multimodal Failure Detection for
+Microservice Systems
+<a href="./paper/kdd23-AnoFusion.pdf" target="_blank">📜</a>
+<a class="bib-link" href="#" id="kdd23-AnoFusion" onclick="copyBibTeX(event, 'kdd23-AnoFusion')">📎</a>
+<br/> Chenyu Zhao<sup>+</sup>, <u>Minghua Ma</u><sup>+</sup>, Zhenyu Zhong, Shenglin
+Zhang,
+Zhiyuan Tan, Xiao Xiong, LuLu Yu, Jiayi Feng, Yongqian Sun, Yuzhi Zhang, Dan Pei,
+Qingwei Lin, Dongmei Zhang
+</li>
+    
+<li> <strong>DSN'23</strong> Characterizing Large-Scale Private and Public Cloud
+Workloads
+<a href="./paper/dsn23-workload.pdf" target="_blank">📜</a>
+<a class="bib-link" href="#" id="dsn23-workload" onclick="copyBibTeX(event, 'dsn23-workload')">📎</a>
+<br/>Xiaoting Qin, <u>Minghua Ma</u>, Yuheng Zhao, Jue Zhang, Chao Du, Yudong Liu,
+Anjaly Parayil, Chetan Bansal, Saravan Rajmohan, Inigo Goiri, Eli Cortez, Si Qin,
+Qingwei Lin, Dongmei Zhang
+</li>
+    
+<li> <strong>TheWebConf'23</strong> EDITS: An Easy-to-difficult Training Strategy for
+Cloud
+Failure Prediction
+<a href="./paper/www23-DFP.pdf" target="_blank">📜</a>
+<a class="bib-link" href="#" id="www23-DFP" onclick="copyBibTeX(event, 'www23-DFP')">📎</a>
+<br/>
+Tianci Li, Pu Zhao, Yudong Liu, <u>Minghua Ma</u>, Lingling Zheng, Murali
+Chintalapati, Bo Liu, Paul Wang, Hongyu Zhang, Yingnong Dang, Saravan Rajmohan, Qingwei
+Lin, Dongmei Zhang
+</li>
+    
+<li> <strong>ICSE-SEIP'23</strong> Aegis: Attribution of Control Plane Change Impact
+across
+Layers and Components for Cloud Systems
+<a href="./paper/seip23-ageis.pdf" target="_blank">📜</a>
+<a class="bib-link" href="#" id="seip23-ageis" onclick="copyBibTeX(event, 'seip23-ageis')">📎</a>
+<br/>
+Xiaohan Yan, Ken Hsieh, Yasitha Liyanage, <u>Minghua Ma</u>, Murali Chintalapati,
+Qingwei Lin, Yingnong Dang, Dongmei Zhang
+</li>
+    
+<li> <strong>ICSE-SEIP'23</strong> TraceArk: Towards Actionable Performance Anomaly
+Alerting for Online Service Systems
+<a href="./paper/seip23-traceark.pdf" target="_blank">📜</a>
+<a class="bib-link" href="#" id="seip23-traceark" onclick="copyBibTeX(event, 'seip23-traceark')">📎</a>
+<br/>
+Zhengran Zeng, Yuqun Zhang, Yong Xu, <u>Minghua Ma</u>, Bo Qiao, Wentao Zou,
+Qingjun Chen, Meng Zhang, Xu Zhang, Hongyu Zhang, Xuedong Gao, Hao Fan, Saravan
+Rajmohan, Qingwei Lin, Dongmei Zhang
+</li>
+    
+<li><strong>ICSE-SEIP'23</strong> CONAN: Diagnosing Batch Failures for Cloud Systems
+<a href="./paper/seip23-conan.pdf" target="_blank">📜</a>
+<a class="bib-link" href="#" id="seip23-conan" onclick="copyBibTeX(event, 'seip23-conan')">📎</a>
+<br/>
+Liqun Li, Xu Zhang, Shilin He, Yu Kang, Hongyu Zhang, <u>Minghua Ma</u>, Yingnong
+Dang, Zhangwei Xu, Saravan Rajmohan, Qingwei Lin, Dongmei Zhang
+
+</li>
+<li><strong>FSE'22</strong> An Empirical Investigation of Missing Data Handling in
+Cloud
+Node Failure Prediction
+<a href="./paper/fse22-disk.pdf" target="_blank">📜</a>
+<a class="bib-link" href="#" id="fse22-disk" onclick="copyBibTeX(event, 'fse22-disk')">📎</a>
+<br/>
+<u>Minghua Ma</u>, Yudong Liu, Yuang Tong, Haozhe Li, Pu Zhao, Yong Xu, Hongyu
+Zhang, Shilin He, Lu Wang, Yingnong Dang, Saravan Rajmohan, Qingwei Lin
+
+</li>
+<li> <strong>FSE'22</strong> An Empirical Study of Log Analysis at Microsoft
+<a href="./paper/fse22-logsurvey.pdf" target="_blank">📜</a>
+<a class="bib-link" href="#" id="fse22-logsurvey" onclick="copyBibTeX(event, 'fse22-logsurvey')">📎</a>
+<br/>
+Shilin He, Xu Zhang, Pinjia He, Yong Xu, Liqun Li, Yu Kang, <u>Minghua Ma</u>,
+Yining Wei, Yingnong Dang, Saravan Rajmohan, Qingwei Lin
+
+</li>
+<li><strong>KDD'22</strong> Multi-task Hierarchical Classification for Disk Failure
+Prediction in Online Service Systems
+<a href="./paper/kdd22-mthc.pdf" target="_blank">📜</a>
+<a class="bib-link" href="#" id="kdd22-mthc" onclick="copyBibTeX(event, 'kdd22-mthc')">📎</a>
+<br/>
+Yudong Liu, Hailan Yang, Pu Zhao, <u>Minghua Ma</u>, Chengwu Wen, Hongyu Zhang,
+Chuan Luo, Qingwei Lin, Chang Yi, Jiaojian Wang, Chenjian Zhang, Paul Wang, Yingnong
+Dang,
+Saravan Rajmohan, Dongmei Zhang
+
+</li>
+<li><strong>TheWebConf'22</strong> UniParser: A Unified Log Parser for Heterogeneous
+Log
+Data
+<a href="./paper/www22-parsing.pdf" target="_blank">📜</a>
+<a class="bib-link" href="#" id="www22-parsing" onclick="copyBibTeX(event, 'www22-parsing')">📎</a>
+<br/>
+Yudong Liu, Xu Zhang, Shilin He, Hongyu Zhang, Liqun Li, Yu Kang, Yong Xu, <u>Minghua
+    Ma</u>, Qingwei Lin, Yingnong Dang, Saravan Rajmohan, Dongmei Zhang
+
+</li>
+<li><strong>DEXA'22</strong> Mining Fluctuation Propagation Graph among Time Series
+with
+Human-in-the-Loop
+<a href="./paper/dexa22-FPG-Miner.pdf" target="_blank">📜</a>
+<a class="bib-link" href="#" id="dexa22-FPG-Miner" onclick="copyBibTeX(event, 'dexa22-FPG-Miner')">📎</a>
+<br/>
+Mingjie Li, <u>Minghua Ma</u>, Xiaohui Nie, Kanglin Yin, Li Cao, Xidao Wen, Zhiyun
+Yuan, Duogang Wu, Guoying Li, Wei Liu, Xin Yang, Dan Pei
+
+</li>
+<li><strong>ATC'21</strong> Jump-Starting Multivariate Time Series Anomaly Detection
+for
+Online Service Systems
+<a href="./paper/atc21-JumpStarter.pdf" target="_blank">📜</a>
+<a href="https://github.com/NetManAIOps/JumpStarter" target="_blank">💻</a>
+<a class="bib-link" href="#" id="atc21-JumpStarter" onclick="copyBibTeX(event, 'atc21-JumpStarter')">📎</a>
+<br/>
+<u>Minghua Ma</u>, Shenglin Zhang, Junjie Chen, Jim Xu, Haozhe Li, Yongliang Lin,
+Xiaohui Nie, Bo Zhou, Yong Wang, Dan Pei
+
+</li>
+<li><strong>VLDB'20</strong> Diagnosing Root Causes of Intermittent Slow Queries in
+Cloud
+Databases
+<a href="./paper/vldb20-slowsql.pdf" target="_blank">📜</a>
+<a class="bib-link" href="#" id="vldb20-slowsql" onclick="copyBibTeX(event, 'vldb20-slowsql')">📎</a>
+<br/>
+<u>Minghua Ma</u>, Zheng Yin, Shenglin Zhang, Sheng Wang, Christopher Zheng,
+Xinhao Jiang, Hanwen Hu, Cheng Luo, Yilin Li, Nengjun Qiu, Feifei Li, Changcheng Chen,
+Dan Pei
+
+</li>
+<li><strong>ISSRE'18</strong> Robust and Rapid Adaption for Concept Drift in Software
+System Anomaly Detection
+<a href="./paper/issre18-stepwise.pdf" target="_blank">📜</a>
+<a class="bib-link" href="#" id="issre18-stepwise" onclick="copyBibTeX(event, 'issre18-stepwise')">📎</a>
+<br/>
+<u>Minghua Ma</u>, Shenglin Zhang, Dan Pei, Xin Huang, Hongwei Dai
+
+<br/><strong>🏆 <font color="red"> IEEE the 29th ISSRE Best Research Paper </font></strong>
+</li>
+<li> <strong>IWQoS'17</strong> You Can Hide, but Your Periodic Schedule Can’t
+<a href="./paper/iwqos17-schedule.pdf" target="_blank">📜</a>
+<a class="bib-link" href="#" id="iwqos17-schedule" onclick="copyBibTeX(event, 'iwqos17-schedule')">📎</a>
+<br/>
+<u>Minghua Ma</u>, Kai Zhao, Kaixin Sui, Lei Xu, Yong Li, Dan Pei
+
+</li>
+<li><strong>IWQoS'16</strong> Your Trajectory Privacy Can Be Breached Even If You Walk
+in
+Groups
+<a href="./paper/iwqos16-privacy.pdf" target="_blank">📜</a>
+<a class="bib-link" href="#" id="iwqos16-privacy" onclick="copyBibTeX(event, 'iwqos16-privacy')">📎</a>
+<br/>
+Kaixin Sui, Youjian Zhao, Dapeng Liu, <u>Minghua Ma</u>, Lei Xu, Li Zimu, Dan Pei
+
+</li>
+<li><strong>UbiComp'16</strong> EDUM: Classroom Education Measurements via Large-scale
+WiFi
+Networks
+<a href="./paper/ubicomp16-EDUM.pdf" target="_blank">📜</a>
+<a class="bib-link" href="#" id="ubicomp16-EDUM" onclick="copyBibTeX(event, 'ubicomp16-EDUM')">📎</a>
+<br/>
+Mengyu Zhou, <u>Minghua Ma</u>, Yangkun Zhang, Kaixin Sui, Dan Pei, Thomas
+Moscibroda
+
+</li>
+<li><strong>MobiSys'16</strong> Characterizing and Improving WiFi Latency in
+Large-Scale
+Operational Networks
+<a href="./paper/mobisys16-sui.pdf" target="_blank">📜</a>
+<a class="bib-link" href="#" id="mobisys16-sui" onclick="copyBibTeX(event, 'mobisys16-sui')">📎</a>
+<br/>
+Kaixin Sui, Mengyu Zhou, Dapeng Liu, <u>Minghua Ma</u>, Dan Pei
+
+</li>
+<li><strong>INFOCOM'16</strong> WiFi can Be the Weakest Link of Round Trip Network
+Latency
+<a href="./paper/infocom16-wifi.pdf" target="_blank">📜</a>
+<a class="bib-link" href="#" id="infocom16-wifi" onclick="copyBibTeX(event, 'infocom16-wifi')">📎</a>
+<br/>
+Changhua Pei, Youjian Zhao, Guo Chen, Ruming Tang, Yuan Meng, <u>Minghua Ma</u>,
+Ken Ling, Dan Pei
+
+</li>
+</ul>
+<h3>Journal</h3>
+<ul class="space_list">
+
+<li><strong>TSC'25</strong> Bridging Edge and Cloud: A Knowledge-Enhanced Framework for Efficient Time Series Anomaly Detection
+<br/>
+Shenglin Zhang, Jiacheng Zhang, Guohua Liu, Shiqi Chen, Chenyu Zhao, <u>Minghua Ma</u>, Yutong Chen, Yongqian Sun, Dan Pei
+</li>   
+
+    
+<li><strong>TOSEM'25</strong> Enhanced Fairness Testing via Generating Effective Initial Individual Discriminatory
+Instances
+<a href="https://arxiv.org/abs/2209.08321" target="_blank">📜</a>
+<a class="bib-link" href="#" id="arxiv-enhance_fairness" onclick="copyBibTeX(event, 'arxiv-enhance_fairness')">📎</a>
+<br/>
+Zhao Tian, <u>Minghua Ma</u>, Max Hort, Federica Sarro, Hongyu Zhang
+</li>   
+
+<li><strong>TSC'23</strong> Robust Failure Diagnosis of Microservice System
+through Multimodal Data
+<a href="https://arxiv.org/abs/2302.10512" target="_blank">📜</a>
+<a class="bib-link" href="#" id="tsc23-robust" onclick="copyBibTeX(event, 'tsc23-robust')">📎</a>
+<br/>
+Shenglin Zhang, Pengxiang Jin, Zihan Lin, Yongqian Sun, Bicheng Zhang, Sibo Xia,
+Zhengdan Li, Zhenyu Zhong, <u>Minghua Ma</u>, Wa Jin, Dai Zhang, Zhenyu Zhu,
+Dan Pei
+
+</li>
+<li><strong>TNSM'19</strong> Automatic and Generic Periodicity Adaptation for KPI
+Anomaly Detection
+<a href="./paper/tnsm19-period.pdf" target="_blank">📜</a>
+<a class="bib-link" href="#" id="tnsm19-period" onclick="copyBibTeX(event, 'tnsm19-period')">📎</a>
+<br/>
+Nengwen Zhao, Jing Zhu, Yao Wang, <u>Minghua Ma</u>, Wenchi Zhang, Dapeng Liu,
+Ming Zhang, Dan Pei
+</li>
+</ul>
+
+  
 
 
