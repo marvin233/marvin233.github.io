@@ -23,9 +23,9 @@ repository               : "marvin233/marvin233.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "bio-photo.jpg"
   name             : "Minghua Ma"
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Senior Researcher"
   location         : "Redmond"
   employer         : "Microsoft"
   uri              : # URL
@@ -36,7 +36,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=A8It-HkAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : #"https://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/my-orcid?orcid=0000-0002-6303-1731"
   semantic         : # URL
   ssrn             : # URL
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
