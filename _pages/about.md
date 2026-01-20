@@ -11,8 +11,7 @@ redirect_from:
 
 ---
 
-I am seeking self-motivated undergraduate, master's, and Ph.D. intern students based in China, the US, and India.  
-If you are interested in working with me, please [email me](mailto:minghuama@microsoft.com) your CV.
+I am seeking self-motivated undergraduate, master's, and Ph.D. intern students. If you are interested in working with me, please [email me](mailto:minghuama@microsoft.com) your CV.
 
 ## Experience
 
