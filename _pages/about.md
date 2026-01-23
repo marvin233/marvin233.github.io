@@ -9,20 +9,14 @@ redirect_from:
 
 **Dr. Minghua Ma** is currently a Senior Researcher at Microsoft [M365 Research](https://www.microsoft.com/en-us/research/group/m365-research/) Group. Before joining Microsoft, he received his Ph.D. degree from Tsinghua University in 2021, under the supervision of [Prof. Dan Pei](https://netman.aiops.org/~peidan/) in the [Netman](https://netman.aiops.org/) Group. His research interests are primarily focused on [AIOps, AI4SE, and SE4AI](https://www.microsoft.com/en-us/research/project/aiops/). He is a Senior Member of CCF.
 
----
-
 I am seeking self-motivated undergraduate, master's, and Ph.D. intern students. If you are interested in working with me, please [email me](mailto:minghuama@microsoft.com) your CV.
 
 ## News
 
-- I will serve as a Mentor for Fundamentals of Cloud Computing (EC-528) at Boston University, thanks to the invitation from Prof. Yigong Hu.
-
-- I will also serve as Industry Track Co-Chair for EASE 2026.
-  
+- 2026, I will serve as a Mentor for Fundamentals of Cloud Computing (EC-528) at Boston University, thanks to the invitation from Prof. Yigong Hu.
+- 2025, I will serve as Industry Track Co-Chair for EASE 2026.
 - 2025, Microsoft Azure CTO Mark Russinovich recently highlighted our agent-based triage system, Triangle, in the [Advancing Reliability blog](https://azure.microsoft.com/en-us/blog/optimizing-incident-management-with-aiops-using-the-triangle-system/).
-
-- 2024, Our team has released the [AIOpsLab](https://microsoft.github.io/AIOpsLab/) framework.
-
+- 2024, Our team has released the [AIOpsLab](https://microsoft.github.io/AIOpsLab/) framework to enable the design, development, and evaluation of autonomous AIOps agents.
 
 ## Experience
 
