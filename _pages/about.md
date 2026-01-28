@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-**Dr. Minghua Ma** is currently a Senior Researcher at Microsoft [M365 Research](https://www.microsoft.com/en-us/research/group/m365-research/) Group. Before joining Microsoft, he received his Ph.D. degree from Tsinghua University in 2021, under the supervision of [Prof. Dan Pei](https://netman.aiops.org/~peidan/) in the [Netman](https://netman.aiops.org/) Group. His research interests are primarily focused on [AIOps, AI4SE, and SE4AI](https://www.microsoft.com/en-us/research/project/aiops/). He is a Senior Member of CCF.
+**Minghua Ma** is currently a Senior Researcher at Microsoft [M365 Research](https://www.microsoft.com/en-us/research/group/m365-research/) Group. Before joining Microsoft, he received his Ph.D. degree from Tsinghua University in 2021, under the supervision of [Prof. Dan Pei](https://netman.aiops.org/~peidan/) in the [Netman](https://netman.aiops.org/) Group. His research interests are primarily focused on [AIOps, AI4SE, and SE4AI](https://www.microsoft.com/en-us/research/project/aiops/). He is a Senior Member of CCF.
 
 I am seeking self-motivated undergraduate, master's, and Ph.D. intern students. If you are interested in working with me, please [email me](mailto:minghuama@microsoft.com) your CV.
 
