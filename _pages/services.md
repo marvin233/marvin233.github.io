@@ -6,9 +6,9 @@ author_profile: true
 ---
 
 - **Organizer**
-  - SANER 2027 — **Tool Demo Track Chair**
-  - [EASE 2026](https://conf.researchr.org/home/ease-2026) — **Industry Track Chair**
-  - [The 4th CCF AIOps Challenge](https://competition.aiops.cn/) — **Technical Chair**
+  - SANER 2027: **Tool Demo Track Chair**
+  - [EASE 2026](https://conf.researchr.org/home/ease-2026): **Industry Track Chair**
+  - [The 4th CCF AIOps Challenge](https://competition.aiops.cn/): **Technical Chair**
 
 - **PC Member**
   - 2026: FSE Industry, TheWebConf, COLM, AIOps Workshop  
@@ -17,8 +17,9 @@ author_profile: true
   - 2023: ASE, KDD, MILETS
 
 - **Journal Reviewer**
-  - TKDE   
-  - TOSEM
+  - ACM Transactions on Software Engineering and Methodology (TOSEM)
+  - IEEE Transactions on Knowledge and Data Engineering (TKDE)   
+  - IEEE Transactions on Services Computing (TSC) 
+  - IEEE Transactions on Cloud Computing (TCC)
   - Neurocomputing
-  - TCC
 
