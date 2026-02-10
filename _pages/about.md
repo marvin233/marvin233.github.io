@@ -13,7 +13,7 @@ I am seeking self-motivated undergraduate, master's, and Ph.D. intern students. 
 
 ## News
 
-- 2025, I will serve as Tool Demo Track Co-Chair for SANER 2027.
+- 2026, I will serve as Tool Demo Track Co-Chair for SANER 2027.
 - 2026, I will serve as a Mentor for EC-528 Cloud Computing at Boston University, thanks to the invitation from Prof.Yigong Hu.
 - 2025, I will serve as Industry Track Co-Chair for EASE 2026.
 - 2025, Microsoft Azure CTO Mark Russinovich recently highlighted our agent-based triage system, Triangle, in the [Advancing Reliability blog](https://azure.microsoft.com/en-us/blog/optimizing-incident-management-with-aiops-using-the-triangle-system/).
