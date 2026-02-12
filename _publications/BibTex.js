@@ -387,6 +387,22 @@ const bibtexData = {
   author={Ding, Ruomeng and Zhang, Chaoyun and Wang, Lu and Xu, Yong and Ma, Minghua and Zhang, Wei and Qin, Si and Rajmohan, Saravan and Lin, Qingwei and Zhang, Dongmei},
   journal={arXiv preprint arXiv:2311.04254},
   year={2023}
+}`,
+'zhao2025triage': `@Article{zhao2025triage,
+ author = {Yongxin Zhao and Shenglin Zhang and Yujia Wu and Yuxin Sun and Yongqian Sun and Dan Pei and Chetan Bansal and Minghua Ma},
+ booktitle = {arXiv.org},
+ journal = {ArXiv},
+ title = {Triage in Software Engineering: A Systematic Review of Research and Practice},
+ volume = {abs/2511.08607},
+ year = {2025}
+}`,
+'feng2025cooks': `@Article{feng2025cooks,
+ author = {Shenglin Zhang and Xiaoyu Feng and Runzhou Wang and Minghua Ma and Wenwei Gu and Yongqian Sun and Zedong Jia and Jinrui Sun and Dan Pei},
+ booktitle = {IEEE International Symposium on Software Reliability Engineering},
+ journal = {2025 IEEE 36th International Symposium on Software Reliability Engineering (ISSRE)},
+ pages = {1-12},
+ title = {Too Many Cooks: Assessing the Need for Multi-Source Data in Microservice Failure Diagnosis},
+ year = {2025}
 }`
 };
 return bibtexData

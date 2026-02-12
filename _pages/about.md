@@ -29,6 +29,10 @@ I am seeking self-motivated undergraduate, master's, and Ph.D. intern students. 
 - **MSRA** — *Researcher*  
   Beijing, Jul 2021 – Jun 2023
 
+### Tsinghua University
+- *Ph.D. Student*
+  Beijing, Sep 2016 - Jun 2021 
+
 ### Georgia Tech
 - *Visiting Scholar*  
   Atlanta, Sep 2019 – Aug 2020

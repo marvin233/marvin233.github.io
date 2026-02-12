@@ -21,3 +21,9 @@ package-lock.json
 
 # Ignore files created by MacOS
 .DS_Store
+
+# Ignore conda environment
+.conda/
+
+# Ignore helper/utility scripts in _publications
+_publications/*.py
