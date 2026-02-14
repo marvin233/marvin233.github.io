@@ -12,4 +12,48 @@
     await mermaid.run({querySelector:'code.language-mermaid'});
 </script>
 
+<!-- Animated stat counters -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var counters = document.querySelectorAll('.stat-number[data-target]');
+  if (!counters.length) return;
+
+  var animated = new Set();
+
+  function animateCounter(el) {
+    var target = parseInt(el.getAttribute('data-target'), 10);
+    var duration = 1500;
+    var start = 0;
+    var startTime = null;
+
+    function step(timestamp) {
+      if (!startTime) startTime = timestamp;
+      var progress = Math.min((timestamp - startTime) / duration, 1);
+      /* Ease out cubic */
+      var ease = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.floor(ease * target);
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      } else {
+        el.textContent = target;
+      }
+    }
+    requestAnimationFrame(step);
+  }
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && !animated.has(entry.target)) {
+        animated.add(entry.target);
+        animateCounter(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  counters.forEach(function(counter) {
+    observer.observe(counter);
+  });
+});
+</script>
+
 <!-- end custom footer snippets -->

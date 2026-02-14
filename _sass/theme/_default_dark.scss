@@ -1,28 +1,28 @@
 /* ==========================================================================
-    DEFAULT THEME - DARK VERSION
+    DEFAULT THEME - DARK VERSION (Geeky Cyber)
     ========================================================================== */
 
 /* Color codes used for the theme */
-$primary-color              : #0ea1c5;
-$gray                       : #7a8288;
+$primary-color              : #00d4aa;  /* Electric teal */
+$gray                       : #8892a0;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 
-$background                 : #474747;
-$background-light           : mix(#fff, $background, 80%);
-$background-lighter         : mix(#fff, $background, 90%);
-$text                       : #ffffff;
-$link                       : #0ea1c5;
-$link-dark                  : mix(#000, $link, 25%);
-$link-light                 : mix(#fff, $link, 25%);
+$background                 : #0d1117;  /* GitHub dark */
+$background-light           : #161b22;
+$background-lighter         : #21262d;
+$text                       : #e6edf3;
+$link                       : #00d4aa;
+$link-dark                  : #00b894;
+$link-light                 : #39ffce;
 
 /* Color codes used for the site */
-$danger-color               : #ee5f5b;
-$info-color                 : #2f7f93;
-$notice-color               : #7a8288;
-$success-color              : #62c462;
-$warning-color              : #f89406;
+$danger-color               : #ff4757;
+$info-color                 : #00d4aa;
+$notice-color               : #8892a0;
+$success-color              : #00e676;
+$warning-color              : #ffc107;
 
 /* Other basic settings for the template */
 $border-radius              : 4px;
@@ -34,23 +34,37 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Dark theme for the site */
+/* Dark theme for the site — geeky cyber look */
 html[data-theme="dark"] {
     --global-base-color                 : #{$primary-color};
     --global-bg-color                   : #{$background};
-    --global-footer-bg-color            : #{$background};
-    --global-border-color               : #{$light-gray};
+    --global-footer-bg-color            : #090c10;
+    --global-border-color               : #{$background-lighter};
     --global-dark-border-color          : #{$background-light};
-    --global-code-background-color      : #fafafa;
-    --global-code-text-color            : #{$darker-gray};
-    --global-fig-caption-color          : #{$light-gray};
+    --global-code-background-color      : #{$background-light};
+    --global-code-text-color            : #c9d1d9;
+    --global-fig-caption-color          : #8b949e;
     --global-link-color                 : #{$link};
-    --global-link-color-hover           : #{$link-dark};
-    --global-link-color-visited         : #{$link-light};
+    --global-link-color-hover           : #{$link-light};
+    --global-link-color-visited         : #{$link-dark};
     --global-masthead-link-color        : #{$text};
     --global-masthead-link-color-hover  : #{$primary-color};
     --global-text-color                 : #{$text};
-    --global-text-color-light           : #f3f3f3;
+    --global-text-color-light           : #8b949e;
     --global-thead-color                : #{$background-lighter};
+
+    /* Custom component colors for dark mode */
+    --hero-bg                           : linear-gradient(135deg, #0d1117 0%, #161b22 50%, #0d1117 100%);
+    --hero-text                         : #c9d1d9;
+    --hero-glow                         : rgba(0, 212, 170, 0.08);
+    --hero-border                       : rgba(0, 212, 170, 0.2);
+    --card-accent                       : linear-gradient(90deg, #00d4aa, #00b4d8, #00d4aa);
+    --card-hover-shadow                 : rgba(0, 212, 170, 0.15);
+    --card-hover-border                 : rgba(0, 212, 170, 0.35);
+    --callout-bg                        : linear-gradient(90deg, rgba(0, 212, 170, 0.06), rgba(0, 180, 216, 0.04));
+    --timeline-gradient                 : linear-gradient(180deg, #00d4aa, #21262d);
+    --marker-active-bg                  : #00d4aa;
+    --marker-active-shadow              : rgba(0, 212, 170, 0.2);
+    --marker-active-glow                : rgba(0, 212, 170, 0.12);
 }
 
