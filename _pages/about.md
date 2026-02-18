@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 <div class="hero-tagline">
-  <p class="hero-subtitle">Building intelligent systems that keep the cloud reliable — from AIOps to autonomous AI agents.</p>
+  <p class="hero-subtitle">Building intelligent systems that keep the cloud reliable<br> from AIOps to autonomous AI agents.</p>
 </div>
 
 **Minghua Ma** is currently a Senior Researcher at Microsoft [M365 Research](https://www.microsoft.com/en-us/research/group/m365-research/) Group. Before joining Microsoft, he received his Ph.D. degree from Tsinghua University in 2021, under the supervision of [Prof. Dan Pei](https://netman.aiops.org/~peidan/) in the [Netman](https://netman.aiops.org/) Group. His research interests are primarily focused on [AIOps, AI4SE, and SE4AI](https://www.microsoft.com/en-us/research/project/aiops/). He is a Senior Member of CCF.
@@ -23,8 +23,8 @@ redirect_from:
   <div class="project-card">
     <div class="project-icon">🔺</div>
     <div class="project-content">
-      <h4><a href="https://github.com/microsoft/Triangle">Triangle</a></h4>
-      <p>Multi-agent incident triage system for cloud services. <strong>Highlighted by Azure CTO Mark Russinovich</strong> in the <a href="https://azure.microsoft.com/en-us/blog/optimizing-incident-management-with-aiops-using-the-triangle-system/">Advancing Reliability blog</a>. Published at ASE'25.</p>
+      <h4><a href="https://azure.microsoft.com/en-us/blog/optimizing-incident-management-with-aiops-using-the-triangle-system/">Triangle</a></h4>
+      <p>Multi-agent incident triage system. <strong>Highlighted by Azure CTO Mark Russinovich</strong> in the Advancing Reliability blog. Published at ASE'25.</p>
     </div>
   </div>
   <div class="project-card">
