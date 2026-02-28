@@ -17,6 +17,7 @@ author_profile: true
   - 2023: ASE, KDD, MILETS
 
 - **Journal Reviewer**
+  - ACM Transactions on Intelligent Systems and Technology (TIST)
   - ACM Transactions on Software Engineering and Methodology (TOSEM)
   - IEEE Transactions on Knowledge and Data Engineering (TKDE)   
   - IEEE Transactions on Services Computing (TSC) 
