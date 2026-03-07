@@ -9,11 +9,11 @@ author_profile: true
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
-* corresponding author, <sup>+</sup> equal contribution, 📜 paper, 💻 code, 💽 dataset, and 📎 BibTeX.
+* corresponding author, <sup>+</sup> equal contribution, &#128221; paper, <span class="code-link-icon" style="color: inherit;"><i class="fab fa-github" aria-hidden="true"></i></span> code, &#128230; dataset, and &#128206; BibTeX.
 
 <div id="notification" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); z-index:1000; background:#fff; color:#333; border:1px solid #ccc; border-radius:8px; box-shadow:0 4px 20px rgba(0,0,0,0.25); padding:20px; max-width:700px; width:90%; max-height:70vh; overflow-y:auto;">
   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-    <strong style="font-size:1.1em;">📎 BibTeX (copied to clipboard)</strong>
+    <strong id="bibtex-title" style="font-size:1.1em;">&#128206; BibTeX (copied to clipboard)</strong>
     <button onclick="document.getElementById('notification').style.display='none'; document.getElementById('notification-overlay').style.display='none';" style="background:none; border:none; font-size:1.4em; cursor:pointer; color:#666;">&times;</button>
   </div>
   <pre id="bibtex-content" style="background:#f5f5f5; padding:12px; border-radius:4px; overflow-x:auto; white-space:pre-wrap; word-break:break-all; font-size:0.9em; margin:0;"></pre>
@@ -28,9 +28,40 @@ var lastCopiedId = null;
 function copyBibTeX(event, id) { event.preventDefault(); var bibtex = bibtexData[id]; if (!bibtex) { alert('BibTeX entry not found for: ' + id); return; } if (navigator.clipboard) { navigator.clipboard.writeText(bibtex); } else { var textarea = document.createElement('textarea'); textarea.value = bibtex; document.body.appendChild(textarea); textarea.select(); textarea.setSelectionRange(0, 99999); document.execCommand('copy'); document.body.removeChild(textarea); } if (lastCopiedId) { document.getElementById(lastCopiedId).textContent = '\u{1F4CE}'; } document.getElementById(id).textContent = "Copied!"; lastCopiedId = id; document.getElementById('bibtex-content').textContent = bibtex; document.getElementById('notification').style.display = 'block'; document.getElementById('notification-overlay').style.display = 'block'; }
 </script>
 
+<script>
+// Enforce clean popup title text in case any encoding artifacts appear.
+(function() {
+  var titleEl = document.getElementById('bibtex-title');
+  if (titleEl) {
+    titleEl.innerHTML = '&#128206; BibTeX (copied to clipboard)';
+  }
+})();
+
+// Auto-close the BibTeX popup shortly after it is shown.
+(function() {
+  var bibtexAutoCloseTimer = null;
+  var originalCopyBibTeX = window.copyBibTeX;
+  if (!originalCopyBibTeX) return;
+
+  window.copyBibTeX = function(event, id) {
+    originalCopyBibTeX(event, id);
+    if (bibtexAutoCloseTimer) {
+      clearTimeout(bibtexAutoCloseTimer);
+    }
+    bibtexAutoCloseTimer = setTimeout(function() {
+      var popup = document.getElementById('notification');
+      var overlay = document.getElementById('notification-overlay');
+      if (popup) popup.style.display = 'none';
+      if (overlay) overlay.style.display = 'none';
+    }, 1000);
+  };
+})();
+</script>
+
 {% assign surveys = site.data.publications | where: "category", "survey" %}
 {% assign conferences = site.data.publications | where: "category", "conference" %}
 {% assign journals = site.data.publications | where: "category", "journal" %}
+{% assign workshops = site.data.publications | where: "category", "workshop" %}
 
 {% if surveys.size > 0 %}
 <h3>Survey/Benchmark</h3>
@@ -38,12 +69,12 @@ function copyBibTeX(event, id) { event.preventDefault(); var bibtex = bibtexData
 {% for pub in surveys %}
 <li>
 {% if pub.venue %}<strong>{{ pub.venue }}</strong> {% endif %}{{ pub.title }}
-{% if pub.paper %}<a href="{{ pub.paper }}" target="_blank">📜</a>{% endif %}
-{% if pub.code %}<a href="{{ pub.code }}" target="_blank">💻</a>{% endif %}
-{% if pub.dataset %}<a href="{{ pub.dataset }}" target="_blank">💽</a>{% endif %}
-{% if pub.bibtex %}<a class="bib-link" href="#" id="{{ pub.title | slugify }}" onclick="copyBibTeX(event, '{{ pub.title | slugify }}')">📎</a>{% endif %}
+{% if pub.paper %}<a href="{{ pub.paper }}" target="_blank">&#128221;</a>{% endif %}
+{% if pub.code %}<a class="code-link" href="{{ pub.code }}" target="_blank" style="color: inherit;"><i class="fab fa-github" aria-hidden="true"></i></a>{% endif %}
+{% if pub.dataset %}<a href="{{ pub.dataset }}" target="_blank">&#128230;</a>{% endif %}
+{% if pub.bibtex %}<a class="bib-link" href="#" id="{{ pub.title | slugify }}" onclick="copyBibTeX(event, '{{ pub.title | slugify }}')">&#128206;</a>{% endif %}
 <br/>{{ pub.authors }}
-{% if pub.award %}<br/><strong>🏆 <font color="red"> {{ pub.award }}</font></strong>{% endif %}
+{% if pub.award %}<br/><strong>&#127942; <font color="red"> {{ pub.award }}</font></strong>{% endif %}
 </li>
 {% endfor %}
 </ul>
@@ -55,12 +86,12 @@ function copyBibTeX(event, id) { event.preventDefault(); var bibtex = bibtexData
 {% for pub in conferences %}
 <li>
 {% if pub.venue %}<strong>{{ pub.venue }}</strong> {% endif %}{{ pub.title }}
-{% if pub.paper %}<a href="{{ pub.paper }}" target="_blank">📜</a>{% endif %}
-{% if pub.code %}<a href="{{ pub.code }}" target="_blank">💻</a>{% endif %}
-{% if pub.dataset %}<a href="{{ pub.dataset }}" target="_blank">💽</a>{% endif %}
-{% if pub.bibtex %}<a class="bib-link" href="#" id="{{ pub.title | slugify }}" onclick="copyBibTeX(event, '{{ pub.title | slugify }}')">📎</a>{% endif %}
+{% if pub.paper %}<a href="{{ pub.paper }}" target="_blank">&#128221;</a>{% endif %}
+{% if pub.code %}<a class="code-link" href="{{ pub.code }}" target="_blank" style="color: inherit;"><i class="fab fa-github" aria-hidden="true"></i></a>{% endif %}
+{% if pub.dataset %}<a href="{{ pub.dataset }}" target="_blank">&#128230;</a>{% endif %}
+{% if pub.bibtex %}<a class="bib-link" href="#" id="{{ pub.title | slugify }}" onclick="copyBibTeX(event, '{{ pub.title | slugify }}')">&#128206;</a>{% endif %}
 <br/>{{ pub.authors }}
-{% if pub.award %}<br/><strong>🏆 <font color="red"> {{ pub.award }}</font></strong>{% endif %}
+{% if pub.award %}<br/><strong>&#127942; <font color="red"> {{ pub.award }}</font></strong>{% endif %}
 </li>
 {% endfor %}
 </ul>
@@ -72,12 +103,29 @@ function copyBibTeX(event, id) { event.preventDefault(); var bibtex = bibtexData
 {% for pub in journals %}
 <li>
 {% if pub.venue %}<strong>{{ pub.venue }}</strong> {% endif %}{{ pub.title }}
-{% if pub.paper %}<a href="{{ pub.paper }}" target="_blank">📜</a>{% endif %}
-{% if pub.code %}<a href="{{ pub.code }}" target="_blank">💻</a>{% endif %}
-{% if pub.dataset %}<a href="{{ pub.dataset }}" target="_blank">💽</a>{% endif %}
-{% if pub.bibtex %}<a class="bib-link" href="#" id="{{ pub.title | slugify }}" onclick="copyBibTeX(event, '{{ pub.title | slugify }}')">📎</a>{% endif %}
+{% if pub.paper %}<a href="{{ pub.paper }}" target="_blank">&#128221;</a>{% endif %}
+{% if pub.code %}<a class="code-link" href="{{ pub.code }}" target="_blank" style="color: inherit;"><i class="fab fa-github" aria-hidden="true"></i></a>{% endif %}
+{% if pub.dataset %}<a href="{{ pub.dataset }}" target="_blank">&#128230;</a>{% endif %}
+{% if pub.bibtex %}<a class="bib-link" href="#" id="{{ pub.title | slugify }}" onclick="copyBibTeX(event, '{{ pub.title | slugify }}')">&#128206;</a>{% endif %}
 <br/>{{ pub.authors }}
-{% if pub.award %}<br/><strong>🏆 <font color="red"> {{ pub.award }}</font></strong>{% endif %}
+{% if pub.award %}<br/><strong>&#127942; <font color="red"> {{ pub.award }}</font></strong>{% endif %}
+</li>
+{% endfor %}
+</ul>
+{% endif %}
+
+{% if workshops.size > 0 %}
+<h3 id="workshop">Workshop</h3>
+<ul class="space_list">
+{% for pub in workshops %}
+<li>
+{% if pub.venue %}<strong>{{ pub.venue }}</strong> {% endif %}{{ pub.title }}
+{% if pub.paper %}<a href="{{ pub.paper }}" target="_blank">&#128221;</a>{% endif %}
+{% if pub.code %}<a class="code-link" href="{{ pub.code }}" target="_blank" style="color: inherit;"><i class="fab fa-github" aria-hidden="true"></i></a>{% endif %}
+{% if pub.dataset %}<a href="{{ pub.dataset }}" target="_blank">&#128230;</a>{% endif %}
+{% if pub.bibtex %}<a class="bib-link" href="#" id="{{ pub.title | slugify }}" onclick="copyBibTeX(event, '{{ pub.title | slugify }}')">&#128206;</a>{% endif %}
+<br/>{{ pub.authors }}
+{% if pub.award %}<br/><strong>&#127942; <font color="red"> {{ pub.award }}</font></strong>{% endif %}
 </li>
 {% endfor %}
 </ul>

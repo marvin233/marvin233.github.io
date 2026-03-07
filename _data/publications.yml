@@ -123,7 +123,7 @@
     }
 - title: 'An Empirical Study of Automation Gaps in LLM Serving Systems'
   authors: Bhala Ranganathan, <u>Minghua Ma</u>, Mickey Zhang, Klein Hu, Rakesh Kelkar, Chetan Bansal
-  category: conference
+  category: workshop
   venue: AIOps'26
 - title: 'Intelligent Triage: Interpretable Incident Triage Workflow using LLM Extracted Triage Reasoning'
   authors: Jianing Liu, Hao Ren, Yu Kang, <u>Minghua Ma</u>, Fangkai Yang, Yong Xu, Xin Gao, Meng Zhang, Hongbin Wang, Xuedong Gao, Dongmei Zhang, Qi Zhang, Chetan Bansal, Saravan Rajmohan, Yingnong Dang
@@ -131,14 +131,30 @@
   venue: ICSE-SEIP'25
 - title: A Benchmark for Language Models in Real-World System Building
   authors: Weilin Jin, Chenyu Zhao, Zeshun Huang, Chaoyun Zhang, Qingwei Lin, Chetan Bansal, Saravan Rajmohan, Shenglin Zhang, Yongqian Sun, Dan Pei, Yifan Wu, Tong Jia, Ying Li, Zhonghai Wu, <u>Minghua Ma*</u>
-  category: conference
+  category: workshop
   venue: LLM4Code'25
+  bibtex: |-
+    @article{jin2026benchmark,
+      title={A Benchmark for Language Models in Real-World System Building},
+      author={Jin, Weilin and Zhao, Chenyu and Huang, Zeshun and Zhang, Chaoyun and Lin, Qingwei and Bansal, Chetan and Rajmohan, Saravan and Zhang, Shenglin and Sun, Yongqian and Pei, Dan and others},
+      journal={arXiv preprint arXiv:2601.12927},
+      year={2026}
+    }
 - title: 'Triangle: Empowering Incident Triage with Multi-Agent'
   authors: Zhaoyang Yu, Aoyang Fang, <u>Minghua Ma*</u>, Jaskaran Singh Walia, Chaoyun Zhang, Shu Chi, Ze Li, Murali Chintalapati, Xuchao Zhang, Rujia Wang, Chetan Bansal, Saravan Rajmohan, Qingwei Lin, Shenglin Zhang, Dan Pei, Pinjia He
   category: conference
   venue: ASE'25
   paper: https://www.microsoft.com/en-us/research/publication/triangle-empowering-incident-triage-with-multi-agents/
   code: https://github.com/microsoft/Triangle
+  bibtex: |-
+    @inproceedings{yu2025triangle,
+      title={Triangle: Empowering Incident Triage with Multi-Agent},
+      author={Yu, Zhaoyang and Fang, Aoyang and Ma, Minghua and Walia, Jaskaran Singh and Zhang, Chaoyun and Chi, Shu and Li, Ze and Chintalapati, Murali and Zhang, Xuchao and Wang, Rujia and others},
+      booktitle={2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)},
+      pages={674--686},
+      year={2025},
+      organization={IEEE}
+    }
 - title: 'Too Many Cooks: Assessing the Need for Multi-Source Data in Microservice Failure Diagnosis'
   authors: Shenglin Zhang, Xiaoyu Feng, Runzhou Wang, <u>Minghua Ma</u>, Wenwei Gu, Yongqian Sun, Zedong Jia, Jinrui Sun and Dan Pei
   category: conference
@@ -159,11 +175,28 @@
   category: conference
   venue: ISSRE'25
   paper: https://arxiv.org/abs/2504.08865
+  bibtex: |-
+    @inproceedings{yan2025empirical,
+      title={An empirical study of production incidents in generative ai cloud services},
+      author={Yan, Haoran and Chen, Yinfang and Ma, Minghua and Wen, Ming and Lu, Shan and Zhang, Shenglin and Xu, Tianyin and Wang, Rujia and Bansal, Chetan and Rajmohan, Saravan and others},
+      booktitle={2025 IEEE 36th International Symposium on Software Reliability Engineering (ISSRE)},
+      pages={359--370},
+      year={2025},
+      organization={IEEE}
+    }
 - title: Large Language Models can Deliver Accurate and Interpretable Time Series Anomaly Detection
   authors: Jun Liu, Chaoyun Zhang, Jiaxu Qian, <u>Minghua Ma</u>, Si Qin, Chetan Bansal, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang
   category: conference
   venue: KDD'25
   paper: https://arxiv.org/abs/2405.15370
+  bibtex: |-
+    @inproceedings{liu2025large,
+      title={Large language models can deliver accurate and interpretable time series anomaly detection},
+      author={Liu, Jun and Zhang, Chaoyun and Qian, Jiaxu and Ma, Minghua and Qin, Si and Bansal, Chetan and Lin, Qingwei and Rajmohan, Saravan and Zhang, Dongmei},
+      booktitle={Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V. 2},
+      pages={4623--4634},
+      year={2025}
+    }
 - title: 'UFO: A UI-Focused Agent for Windows OS Interaction'
   authors: Chaoyun Zhang, Liqun Li, Shilin He, Xu Zhang, Bo Qiao, Si Qin, <u>Minghua Ma</u>, Yu Kang, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang, Qi Zhang
   category: conference
@@ -180,17 +213,28 @@
   authors: Yongqian Sun, Jiaju Wang, Zhengdan Li, Xiaohui Nie, <u>Minghua Ma</u>, Shenglin Zhang, Yuhe Ji, Lu Zhang, Wen Long, Yongnan Luo, Hengmao Chen, Dan Pei
   category: conference
   venue: SANER'25
+  bibtex: |-
+    @inproceedings{sun2025aiopsarena,
+      title={Aiopsarena: Scenario-oriented evaluation and leaderboard for aiops algorithms in microservices},
+      author={Sun, Yongqian and Wang, Jiaju and Li, Zhengdan and Nie, Xiaohui and Ma, Minghua and Zhang, Shenglin and Ji, Yuhe and Zhang, Lu and Long, Wen and Chen, Hengmao and others},
+      booktitle={2025 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)},
+      pages={809--813},
+      year={2025},
+      organization={IEEE}
+    }
 - title: 'AllHands: Ask Me Anything on Large-scale Verbatim Feedback via Large Language Models'
   authors: Chaoyun Zhang, Zicheng Ma, Yuhao Wu, Shilin He, Si Qin, <u>Minghua Ma</u>, Xiaoting Qin, Yu Kang, Yuyi Liang, Xiaoyu Gou, Yajie Xue, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang, Qi Zhang
   category: conference
   venue: ICDE'25
   paper: https://arxiv.org/abs/2403.15157
   bibtex: |-
-    @article{zhang2024allhands,
-      title={AllHands: Ask Me Anything on Large-scale Verbatim Feedback via Large Language Models},
+    @inproceedings{zhang2025allhands,
+      title={Allhands: Ask me anything on large-scale verbatim feedback via large language models},
       author={Zhang, Chaoyun and Ma, Zicheng and Wu, Yuhao and He, Shilin and Qin, Si and Ma, Minghua and Qin, Xiaoting and Kang, Yu and Liang, Yuyi and Gou, Xiaoyu and others},
-      journal={arXiv preprint arXiv:2403.15157},
-      year={2024}
+      booktitle={2025 IEEE 41st International Conference on Data Engineering (ICDE)},
+      pages={43--57},
+      year={2025},
+      organization={IEEE}
     }
 - title: 'Building AI Agents for Autonomous Clouds: Challenges and Design Principles'
   authors: Manish Shetty, Yinfang Chen, Gagan Somashekar, <u>Minghua Ma</u>, Yogesh Simmhan, Xuchao Zhang, Jonathan Mace, Dax Vandevoorde, Pedro Las-Casas, Shachee Mishra Gupta, Suman Nath, Chetan Bansal, Saravan Rajmohan
@@ -630,7 +674,7 @@
     }
 - title: Batch Job Run Time Prediction for Auto-Scaling in the Cloud
   authors: <u>Minghua Ma</u>, Christopher Zheng, Junjie Chen, Yilin Li, Xiao Peng, Gang Wang, Yong Wu, Fang Zhou, Wenchi Zhang, Kaixin Sui, Dan Pei
-  category: conference
+  category: workshop
   venue: AIOps'20
   bibtex: |-
     @article{ma2020batch,

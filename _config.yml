@@ -28,6 +28,7 @@ author:
   bio              : "Senior Researcher"
   location         : "Redmond"
   employer         : "Microsoft"
+  employer_uri     : "https://www.microsoft.com/en-us/research/people/minghuama/"
   uri              : # URL
   
   # Academic websites
@@ -177,7 +178,6 @@ exclude:
   - CHANGELOG
   - Capfile
   - config
-  - Dockerfile
   - Gemfile
   - Gruntfile.js
   - gulpfile.js

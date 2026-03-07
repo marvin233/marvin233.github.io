@@ -28,19 +28,11 @@ _publications/       # BibTeX utilities (fetch_bibtex.py, BibTex.js legacy)
 
 ## Running Locally
 
-### Using Docker (recommended)
-
-```bash
-docker compose up
-```
-
-The site will be available at [http://localhost:4000](http://localhost:4000).
-
-### Without Docker
-
 1. Install dependencies: `ruby-dev`, `bundler`, `nodejs`
 2. Run `bundle install`
 3. Run `jekyll serve -l -H localhost`
+
+The site will be available at [http://localhost:4000](http://localhost:4000).
 
 ## Adding a Publication
 

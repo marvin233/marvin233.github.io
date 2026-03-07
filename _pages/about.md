@@ -7,14 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-<div class="hero-tagline">
-  <p class="hero-subtitle">Building intelligent systems that keep the cloud reliable<br> from AIOps to autonomous AI agents.</p>
-</div>
 
 **Minghua Ma** is currently a Senior Researcher at Microsoft [M365 Research](https://www.microsoft.com/en-us/research/group/m365-research/) Group. Before joining Microsoft, he received his Ph.D. degree from Tsinghua University in 2021, under the supervision of [Prof. Dan Pei](https://netman.aiops.org/~peidan/) in the [Netman](https://netman.aiops.org/) Group. His research interests are primarily focused on [AIOps, AI4SE, and SE4AI](https://www.microsoft.com/en-us/research/project/aiops/). He is a Senior Member of CCF.
 
 <p class="intern-callout">
-  🎓 <strong>Internship Opportunities:</strong> I am seeking self-motivated undergraduate, master's, and Ph.D. intern students. If you are interested in working with me, please <a href="mailto:minghuama@microsoft.com">email me</a> your CV.
+  <i class="fas fa-user-graduate" aria-hidden="true"></i> <strong>Internship Opportunities:</strong> I am seeking self-motivated undergraduate, master's, and Ph.D. intern students. If you are interested in working with me, please <a href="mailto:minghuama@microsoft.com">email me</a> your CV.
 </p>
 
 ## Featured Research Highlights
@@ -49,7 +46,6 @@ redirect_from:
     </div>
   </div>
 </div>
-
 ## News
 
 <div class="news-cards">
@@ -98,12 +94,12 @@ redirect_from:
     <div class="tl-content">
       <div class="tl-header">
         <h3>Microsoft</h3>
-        <span class="tl-date">2021 – Present</span>
+        <span class="tl-date">2021 - Present</span>
       </div>
       <div class="tl-roles">
-        <div class="tl-role">Senior Researcher, M365 Research <span class="tl-loc">Redmond · 2024–Present</span></div>
-        <div class="tl-role">Senior Researcher, DKI <span class="tl-loc">Beijing · 2023–2024</span></div>
-        <div class="tl-role">Researcher, MSRA <span class="tl-loc">Beijing · 2021–2023</span></div>
+        <div class="tl-role">Senior Researcher, M365 Research <span class="tl-loc">Redmond &middot; 2024-Present</span></div>
+        <div class="tl-role">Senior Researcher, DKI <span class="tl-loc">Beijing &middot; 2023-2024</span></div>
+        <div class="tl-role">Researcher, MSRA <span class="tl-loc">Beijing &middot; 2021-2023</span></div>
       </div>
     </div>
   </div>
@@ -112,7 +108,7 @@ redirect_from:
     <div class="tl-content">
       <div class="tl-header">
         <h3>Tsinghua University</h3>
-        <span class="tl-date">2016 – 2021</span>
+        <span class="tl-date">2016 - 2021</span>
       </div>
       <div class="tl-roles">
         <div class="tl-role">Ph.D. Student <span class="tl-loc">Beijing</span></div>
@@ -124,7 +120,7 @@ redirect_from:
     <div class="tl-content">
       <div class="tl-header">
         <h3>Georgia Tech</h3>
-        <span class="tl-date">2019 – 2020</span>
+        <span class="tl-date">2019 - 2020</span>
       </div>
       <div class="tl-roles">
         <div class="tl-role">Visiting Scholar <span class="tl-loc">Atlanta</span></div>
