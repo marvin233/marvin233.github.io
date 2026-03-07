@@ -30,15 +30,36 @@
   authors: Chenyu Zhao, Shenglin Zhang, Zeshun Huang, Weilin Jin, Yongqian Sun, Dan Pei, Chaoyun Zhang, Qingwei Lin, Chetan Bansal, Saravan Rajmohan, <u>Minghua Ma*</u>
   category: survey
   paper: https://arxiv.org/abs/2511.00780
+  bibtex: |-
+    @article{zhao2025can,
+      title={Can language models go beyond coding? assessing the capability of language models to build real-world systems},
+      author={Zhao, Chenyu and Zhang, Shenglin and Huang, Zeshun and Jin, Weilin and Sun, Yongqian and Pei, Dan and Zhang, Chaoyun and Lin, Qingwei and Bansal, Chetan and Rajmohan, Saravan and Ma, Minghua},
+      journal={arXiv preprint arXiv:2511.00780},
+      year={2025}
+    }
 - title: 'GUI-360: A Comprehensive Dataset and Benchmark for Computer-Using Agents'
   authors: Jian Mu, Chaoyun Zhang, Chiming Ni, Lu Wang, Bo Qiao, Kartik Mathur, Qianhui Wu, Yuhang Xie, Xiaojun Ma, Mengyu Zhou, Si Qin, Liqun Li, Yu Kang, <u>Minghua Ma</u>, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang
   category: survey
   paper: https://arxiv.org/abs/2511.04307
+  bibtex: |-
+    @article{mu2025gui,
+      title={Gui-360: A comprehensive dataset and benchmark for computer-using agents},
+      author={Mu, Jian and Zhang, Chaoyun and Ni, Chiming and Wang, Lu and Qiao, Bo and Mathur, Kartik and Wu, Qianhui and Xie, Yuhang and Ma, Xiaojun and Zhou, Mengyu and Qin, Si and Li, Liqun and Kang, Yu and Ma, Minghua and Lin, Qingwei and Rajmohan, Saravan and others},
+      journal={arXiv preprint arXiv:2511.04307},
+      year={2025}
+    }
 - title: 'OpsEval: A Comprehensive Benchmark Suite for Evaluating Large Language Models'' Capability in IT Operations Domain'
   authors: Yuhe Liu, Changhua Pei, Longlong Xu, Bohan Chen, Mingze Sun, Zhirui Zhang, Yongqian Sun, Shenglin Zhang, Kun Wang, Haiming Zhang, Jianhui Li, Gaogang Xie, Xidao Wen, Xiaohui Nie, <u>Minghua Ma</u>, Dan Pei
   category: survey
   venue: FSE'25
   paper: https://arxiv.org/abs/2310.07637
+  bibtex: |-
+    @article{liu2023opseval,
+      title={Opseval: A comprehensive benchmark suite for evaluating large language models' capability in it operations domain},
+      author={Liu, Yuhe and Pei, Changhua and Xu, Longlong and Chen, Bohan and Sun, Mingze and Zhang, Zhirui and Sun, Yongqian and Zhang, Shenglin and Wang, Kun and Zhang, Haiming and Ma, Minghua and Pei, Dan},
+      journal={arXiv preprint arXiv:2310.07637},
+      year={2023}
+    }
 - title: 'AIOpsLab: A Holistic Framework for Evaluating AI Agents for Enabling Autonomous Cloud'
   authors: Yinfang Chen, Manish Shetty, Gagan Somashekar, <u>Minghua Ma*</u>, Yogesh Simmhan, Jonathan Mace, Chetan Bansal, Rujia Wang, Saravan Rajmohan
   category: survey
@@ -46,11 +67,12 @@
   paper: https://www.microsoft.com/en-us/research/publication/aiopslab-a-holistic-framework-for-evaluating-ai-agents-for-enabling-autonomous-cloud/
   code: https://github.com/microsoft/aiopslab
   bibtex: |-
-    @article{chen2024aiopslab,
-      title={AIOpsLab: A Holistic Framework to Evaluate AI Agents for Enabling Autonomous Clouds},
+    @article{chen2025aiopslab,
+      title={Aiopslab: A holistic framework to evaluate ai agents for enabling autonomous clouds},
       author={Chen, Yinfang and Shetty, Manish and Somashekar, Gagan and Ma, Minghua and Simmhan, Yogesh and Mace, Jonathan and Bansal, Chetan and Wang, Rujia and Rajmohan, Saravan},
-      year={2024},
-      journal={Arxiv}
+      journal={Proceedings of Machine Learning and Systems},
+      volume={7},
+      year={2025}
     }
 - title: 'Large Language Model-Brained GUI Agents: A Survey'
   authors: Chaoyun Zhang, Shilin He, Jiaxu Qian, Bowen Li, Liqun Li, Si Qin, Yu Kang, <u>Minghua Ma</u>, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang, Qi Zhang
@@ -99,6 +121,10 @@
       journal={arXiv preprint arXiv:2208.03938},
       year={2022}
     }
+- title: 'An Empirical Study of Automation Gaps in LLM Serving Systems'
+  authors: Bhala Ranganathan, <u>Minghua Ma</u>, Mickey Zhang, Klein Hu, Rakesh Kelkar, Chetan Bansal
+  category: conference
+  venue: AIOps'26
 - title: 'Intelligent Triage: Interpretable Incident Triage Workflow using LLM Extracted Triage Reasoning'
   authors: Jianing Liu, Hao Ren, Yu Kang, <u>Minghua Ma</u>, Fangkai Yang, Yong Xu, Xin Gao, Meng Zhang, Hongbin Wang, Xuedong Gao, Dongmei Zhang, Qi Zhang, Chetan Bansal, Saravan Rajmohan, Yingnong Dang
   category: conference
@@ -601,6 +627,16 @@
       pages={1176--1189},
       year={2020},
       publisher={VLDB Endowment}
+    }
+- title: Batch Job Run Time Prediction for Auto-Scaling in the Cloud
+  authors: <u>Minghua Ma</u>, Christopher Zheng, Junjie Chen, Yilin Li, Xiao Peng, Gang Wang, Yong Wu, Fang Zhou, Wenchi Zhang, Kaixin Sui, Dan Pei
+  category: conference
+  venue: AIOps'20
+  bibtex: |-
+    @article{ma2020batch,
+      title={Batch Job Run Time Prediction for Auto-Scaling in the Cloud},
+      author={Ma, Minghua and Zheng, Christopher and Chen, Junjie and Li, Yilin and Peng, Xiao and Wang, Gang and Wu, Yong and Zhou, Fang and Zhang, Wenchi and Sui, Kaixin and Pei, Dan},
+      year={2020}
     }
 - title: Robust and Rapid Adaption for Concept Drift in Software System Anomaly Detection
   authors: <u>Minghua Ma</u>, Shenglin Zhang, Dan Pei, Xin Huang, Hongwei Dai
