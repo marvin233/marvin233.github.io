@@ -88,51 +88,34 @@ redirect_from:
 
 ## Experience
 
-<div class="timeline">
-  <div class="tl-item">
-    <div class="tl-rail">
-      <div class="tl-dot active"></div>
-      <div class="tl-line"></div>
+<div class="exp-list">
+  <div class="exp-card">
+    <div class="exp-header">
+      <h3>Microsoft</h3>
+      <span class="exp-date">2021 &ndash; Present</span>
     </div>
-    <div class="tl-content">
-      <div class="tl-header">
-        <h3>Microsoft</h3>
-        <span class="tl-date">2021 - Present</span>
-      </div>
-      <div class="tl-roles">
-        <div class="tl-role">Senior Researcher, M365 Research <span class="tl-loc">Redmond &middot; 2024-Present</span></div>
-        <div class="tl-role">Senior Researcher, DKI <span class="tl-loc">Beijing &middot; 2023-2024</span></div>
-        <div class="tl-role">Researcher, MSRA <span class="tl-loc">Beijing &middot; 2021-2023</span></div>
-      </div>
+    <div class="exp-roles">
+      <div class="exp-role"><strong>Senior Researcher</strong>, M365 Research <span class="exp-loc">Redmond, 2024&ndash;Present</span></div>
+      <div class="exp-role"><strong>Senior Researcher</strong>, DKI <span class="exp-loc">Beijing, 2023&ndash;2024</span></div>
+      <div class="exp-role"><strong>Researcher</strong>, MSRA <span class="exp-loc">Beijing, 2021&ndash;2023</span></div>
     </div>
   </div>
-  <div class="tl-item">
-    <div class="tl-rail">
-      <div class="tl-dot"></div>
-      <div class="tl-line"></div>
+  <div class="exp-card">
+    <div class="exp-header">
+      <h3>Tsinghua University</h3>
+      <span class="exp-date">2016 &ndash; 2021</span>
     </div>
-    <div class="tl-content">
-      <div class="tl-header">
-        <h3>Tsinghua University</h3>
-        <span class="tl-date">2016 - 2021</span>
-      </div>
-      <div class="tl-roles">
-        <div class="tl-role">Ph.D. Student <span class="tl-loc">Beijing</span></div>
-      </div>
+    <div class="exp-roles">
+      <div class="exp-role"><strong>Ph.D. Student</strong> <span class="exp-loc">Beijing</span></div>
     </div>
   </div>
-  <div class="tl-item">
-    <div class="tl-rail">
-      <div class="tl-dot"></div>
+  <div class="exp-card">
+    <div class="exp-header">
+      <h3>Georgia Tech</h3>
+      <span class="exp-date">2019 &ndash; 2020</span>
     </div>
-    <div class="tl-content">
-      <div class="tl-header">
-        <h3>Georgia Tech</h3>
-        <span class="tl-date">2019 - 2020</span>
-      </div>
-      <div class="tl-roles">
-        <div class="tl-role">Visiting Scholar <span class="tl-loc">Atlanta</span></div>
-      </div>
+    <div class="exp-roles">
+      <div class="exp-role"><strong>Visiting Scholar</strong> <span class="exp-loc">Atlanta</span></div>
     </div>
   </div>
 </div>

@@ -257,57 +257,16 @@ html[data-theme="dark"] {
   }
 }
 
-/* ---------- Experience Timeline ---------- */
-.timeline {
-  position: relative;
-  padding-left: 0;
+/* ---------- Experience Cards ---------- */
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
   margin: 1em 0 2em 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
 }
 
-.tl-item {
-  display: flex;
-  align-items: stretch;
-  min-height: 4em;
-}
-
-.tl-rail {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 3em;
-  flex-shrink: 0;
-}
-
-.tl-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: 2.5px solid var(--global-border-color);
-  background: var(--global-bg-color);
-  flex-shrink: 0;
-  margin-top: 1.1em;
-  z-index: 1;
-
-  &.active {
-    border-color: var(--global-base-color);
-    background: var(--global-base-color);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
-  }
-}
-
-.tl-line {
-  flex: 1;
-  width: 2px;
-  background: var(--global-border-color);
-}
-
-.tl-content {
-  flex: 1;
-  padding: 0.8em 1.1em;
-  margin: 0.4em 0;
+.exp-card {
+  padding: 1em 1.2em;
   border: 1px solid var(--global-border-color);
   border-radius: 10px;
   background: var(--global-bg-color);
@@ -319,7 +278,7 @@ html[data-theme="dark"] {
   }
 }
 
-.tl-header {
+.exp-header {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -334,32 +293,25 @@ html[data-theme="dark"] {
   }
 }
 
-.tl-date {
-  font-size: 0.78em;
+.exp-date {
+  font-size: 0.8em;
   color: var(--global-text-color-light);
   font-weight: 500;
   white-space: nowrap;
-  background: rgba(0, 0, 0, 0.04);
-  padding: 0.15em 0.6em;
-  border-radius: 999px;
 }
 
-html[data-theme="dark"] .tl-date {
-  background: rgba(255, 255, 255, 0.08);
+.exp-roles {
+  margin-top: 0.3em;
 }
 
-.tl-roles {
-  margin-top: 0.35em;
-}
-
-.tl-role {
-  font-size: 0.88em;
+.exp-role {
+  font-size: 0.9em;
   color: var(--global-text-color);
-  padding: 0.12em 0;
+  padding: 0.1em 0;
   line-height: 1.55;
 }
 
-.tl-loc {
+.exp-loc {
   font-size: 0.82em;
   color: var(--global-text-color-light);
   &::before {
@@ -382,7 +334,7 @@ html[data-theme="dark"] .tl-date {
 
 .news-card,
 .project-card,
-.tl-item {
+.exp-card {
   animation: fadeInUp 0.5s ease both;
 }
 
@@ -397,9 +349,9 @@ html[data-theme="dark"] .tl-date {
 .project-card:nth-child(3) { animation-delay: 0.2s; }
 .project-card:nth-child(4) { animation-delay: 0.25s; }
 
-.tl-item:nth-child(1) { animation-delay: 0.1s; }
-.tl-item:nth-child(2) { animation-delay: 0.2s; }
-.tl-item:nth-child(3) { animation-delay: 0.3s; }
+.exp-card:nth-child(1) { animation-delay: 0.1s; }
+.exp-card:nth-child(2) { animation-delay: 0.2s; }
+.exp-card:nth-child(3) { animation-delay: 0.3s; }
 
 /* ---------- Mobile Responsiveness ---------- */
 @media (max-width: 600px) {
@@ -407,11 +359,7 @@ html[data-theme="dark"] .tl-date {
     grid-template-columns: 1fr;
   }
 
-  .timeline {
-    padding-left: 1.6em;
-  }
-
-  .tl-header {
+  .exp-header {
     flex-direction: column;
     gap: 0.1em;
   }
