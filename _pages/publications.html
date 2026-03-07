@@ -5,6 +5,43 @@ permalink: /publications/
 author_profile: true
 ---
 
+<!-- JSON-LD structured data for agents and search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Publications - {{ site.author.name }}",
+  "url": "{{ site.url }}/publications/",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}",
+    "url": "{{ site.url }}",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "{{ site.author.employer }}"
+    }
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {% for pub in site.data.publications %}
+      {
+        "@type": "ScholarlyArticle",
+        "position": {{ forloop.index }},
+        "name": {{ pub.title | jsonify }},
+        "author": {{ pub.authors | strip_html | jsonify }},
+        {% if pub.venue %}"isPartOf": { "@type": "PublicationEvent", "name": {{ pub.venue | jsonify }} },{% endif %}
+        {% if pub.paper %}"url": {{ pub.paper | jsonify }},{% endif %}
+        {% if pub.code %}"codeRepository": {{ pub.code | jsonify }},{% endif %}
+        {% if pub.award %}"award": {{ pub.award | jsonify }},{% endif %}
+        "genre": {{ pub.category | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+}
+</script>
+
 {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}

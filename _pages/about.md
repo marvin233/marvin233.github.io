@@ -90,7 +90,10 @@ redirect_from:
 
 <div class="timeline">
   <div class="tl-item">
-    <div class="tl-dot active"></div>
+    <div class="tl-rail">
+      <div class="tl-dot active"></div>
+      <div class="tl-line"></div>
+    </div>
     <div class="tl-content">
       <div class="tl-header">
         <h3>Microsoft</h3>
@@ -104,7 +107,10 @@ redirect_from:
     </div>
   </div>
   <div class="tl-item">
-    <div class="tl-dot"></div>
+    <div class="tl-rail">
+      <div class="tl-dot"></div>
+      <div class="tl-line"></div>
+    </div>
     <div class="tl-content">
       <div class="tl-header">
         <h3>Tsinghua University</h3>
@@ -116,7 +122,9 @@ redirect_from:
     </div>
   </div>
   <div class="tl-item">
-    <div class="tl-dot"></div>
+    <div class="tl-rail">
+      <div class="tl-dot"></div>
+    </div>
     <div class="tl-content">
       <div class="tl-header">
         <h3>Georgia Tech</h3>
