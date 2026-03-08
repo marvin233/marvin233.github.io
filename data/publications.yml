@@ -393,7 +393,7 @@
       year={2024}
     }
 - title: 'Everything of Thoughts: Defying the Law of Penrose Triangle for Thought Generation'
-  topic: Incident Management
+  topic: LLM & AI Agents
   authors: Ruomeng Ding, Chaoyun Zhang, Lu Wang, Yong Xu, <u>Minghua Ma</u>, Wei Zhang, Si Qin, Saravan Rajmohan, Qingwei Lin, Dongmei Zhang
   category: conference
   venue: ACL'24
@@ -825,7 +825,7 @@
   category: journal
   venue: TSC'25
 - title: Enhanced Fairness Testing via Generating Effective Initial Individual Discriminatory Instances
-  topic: LLM & AI Agents
+  topic: Cloud Reliability
   authors: Zhao Tian, <u>Minghua Ma</u>, Max Hort, Federica Sarro, Hongyu Zhang
   category: journal
   venue: TOSEM'25
