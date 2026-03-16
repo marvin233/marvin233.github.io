@@ -204,6 +204,18 @@ function renderPubList(pubs, idPrefix) {
   return html;
 }
 
+/* ---- Extract year from venue (e.g. "FSE'24" → 2024) or bibtex ---- */
+function getPubYear(pub) {
+  if (!pub.venue) return 9999; // unpublished → sort to end
+  var m = pub.venue.match(/'(\d{2})\b/);
+  if (m) return 2000 + parseInt(m[1], 10);
+  if (pub.bibtex) {
+    var m2 = pub.bibtex.match(/year\s*=\s*\{?(\d{4})\}?/);
+    if (m2) return parseInt(m2[1], 10);
+  }
+  return 9999;
+}
+
 /* ---- Build grouped view ---- */
 function buildGroupView(pubs, field, groups, container) {
   var html = '';
@@ -211,6 +223,13 @@ function buildGroupView(pubs, field, groups, container) {
     var label = g.label || g.key;
     var filtered = pubs.filter(function(p) { return p[field] === g.key; });
     if (filtered.length === 0) return;
+    filtered.sort(function(a, b) {
+      var ya = getPubYear(a), yb = getPubYear(b);
+      // Push unpublished (year 9999) to the end
+      if (ya === 9999 && yb !== 9999) return 1;
+      if (yb === 9999 && ya !== 9999) return -1;
+      return yb - ya; // newest first
+    });
     // Collect bibtex for group copy
     var groupBib = filtered.filter(function(p){ return p.bibtex; }).map(function(p){ return p.bibtex; });
     html += '<h3>' + label;
@@ -247,7 +266,6 @@ fetch('/data/publications.yml')
       { key: 'Networking', label: 'Networking' }
     ];
     var venueGroups = [
-      { key: 'survey', label: 'Survey/Benchmark' },
       { key: 'conference', label: 'Conference' },
       { key: 'journal', label: 'Journal' },
       { key: 'workshop', label: 'Workshop' }

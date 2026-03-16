@@ -3,9 +3,10 @@
 # =============================================================================
 # Each paper has:
 #   - title:         Paper title (required)
+#   - topic:         Research topic, e.g. "Incident Management" (required)
 #   - authors:       Author string (required); "Minghua Ma" is auto-bolded
 #   - venue:         Short venue label, e.g. "FSE'24" (optional)
-#   - category:      survey | conference | journal (required)
+#   - category:      conference | journal | workshop (required)
 #   - paper:         URL to paper PDF / preprint (optional)
 #   - code:          URL to code repository (optional)
 #   - dataset:       URL to dataset (optional)
@@ -14,9 +15,9 @@
 # =============================================================================
 
 - title: 'Triage in Software Engineering: A Systematic Review of Research and Practice'
-  topic: Incident Management
+  topic: Survey
   authors: Yongxin Zhao, Shenglin Zhang, Yujia Wu, Yuxin Sun, Yongqian Sun, Dan Pei, Chetan Bansal, Minghua Ma*
-  category: survey
+  category: journal
   paper: https://arxiv.org/abs/2511.08607
   bibtex: |-
     @Article{zhao2025triage,
@@ -30,7 +31,7 @@
 - title: Can Language Models Go Beyond Coding? Assessing the Capability of Language Models to Build Real-World Systems
   topic: LLM & AI Agents
   authors: Chenyu Zhao, Shenglin Zhang, Zeshun Huang, Weilin Jin, Yongqian Sun, Dan Pei, Chaoyun Zhang, Qingwei Lin, Chetan Bansal, Saravan Rajmohan, Minghua Ma*
-  category: survey
+  category: journal
   paper: https://arxiv.org/abs/2511.00780
   bibtex: |-
     @article{zhao2025can,
@@ -42,7 +43,7 @@
 - title: 'GUI-360: A Comprehensive Dataset and Benchmark for Computer-Using Agents'
   topic: LLM & AI Agents
   authors: Jian Mu, Chaoyun Zhang, Chiming Ni, Lu Wang, Bo Qiao, Kartik Mathur, Qianhui Wu, Yuhang Xie, Xiaojun Ma, Mengyu Zhou, Si Qin, Liqun Li, Yu Kang, Minghua Ma, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang
-  category: survey
+  category: journal
   paper: https://arxiv.org/abs/2511.04307
   bibtex: |-
     @article{mu2025gui,
@@ -54,7 +55,7 @@
 - title: 'OpsEval: A Comprehensive Benchmark Suite for Evaluating Large Language Models'' Capability in IT Operations Domain'
   topic: LLM & AI Agents
   authors: Yuhe Liu, Changhua Pei, Longlong Xu, Bohan Chen, Mingze Sun, Zhirui Zhang, Yongqian Sun, Shenglin Zhang, Kun Wang, Haiming Zhang, Jianhui Li, Gaogang Xie, Xidao Wen, Xiaohui Nie, Minghua Ma, Dan Pei
-  category: survey
+  category: conference
   venue: FSE'25
   paper: https://arxiv.org/abs/2310.07637
   bibtex: |-
@@ -67,7 +68,7 @@
 - title: 'AIOpsLab: A Holistic Framework for Evaluating AI Agents for Enabling Autonomous Cloud'
   topic: LLM & AI Agents
   authors: Yinfang Chen, Manish Shetty, Gagan Somashekar, Minghua Ma*, Yogesh Simmhan, Jonathan Mace, Chetan Bansal, Rujia Wang, Saravan Rajmohan
-  category: survey
+  category: conference
   venue: MLSys'25
   paper: https://www.microsoft.com/en-us/research/publication/aiopslab-a-holistic-framework-for-evaluating-ai-agents-for-enabling-autonomous-cloud/
   code: https://github.com/microsoft/aiopslab
@@ -80,9 +81,9 @@
       year={2025}
     }
 - title: 'Large Language Model-Brained GUI Agents: A Survey'
-  topic: LLM & AI Agents
+  topic: Survey
   authors: Chaoyun Zhang, Shilin He, Jiaxu Qian, Bowen Li, Liqun Li, Si Qin, Yu Kang, Minghua Ma, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang, Qi Zhang
-  category: survey
+  category: journal
   venue: TMLR'25
   paper: https://arxiv.org/abs/2411.18279
   bibtex: |-
@@ -93,9 +94,9 @@
       year={2024}
     }
 - title: 'Failure Diagnosis in Microservice Systems: A Comprehensive Survey and Analysis'
-  topic: Cloud Reliability
+  topic: Survey
   authors: Shenglin Zhang, Sibo Xia, Wenzhao Fan, Binpeng Shi, Xiao Xiong, Zhenyu Zhong, Minghua Ma, Yongqian Sun, Dan Pei
-  category: survey
+  category: journal
   venue: TOSEM'25
   paper: https://arxiv.org/abs/2407.01710
   bibtex: |-
@@ -106,9 +107,9 @@
       year={2025}
     }
 - title: A Survey of Time Series Anomaly Detection Methods in the AIOps Domain
-  topic: Anomaly Detection
+  topic: Survey
   authors: Zhenyu Zhong and Qiliang Fan, Jiacheng Zhang, Minghua Ma, Shenglin Zhang, Yongqian Sun, Qingwei Lin, Yuzhi Zhang, Dan Pei
-  category: survey
+  category: journal
   paper: https://arxiv.org/abs/2308.00393
   bibtex: |-
     @article{zhong2023survey,
@@ -120,7 +121,7 @@
 - title: Constructing Large-Scale Real-World Benchmark Datasets for AIOps
   topic: Cloud Reliability
   authors: Zeyan Li, Nengwen Zhao, Shenglin Zhang, Yongqian Sun, Pengfei Chen, Xidao Wen, Minghua Ma, Dan Pei
-  category: survey
+  category: journal
   paper: https://arxiv.org/abs/2208.03938
   dataset: https://github.com/NetManAIOps
   bibtex: |-
