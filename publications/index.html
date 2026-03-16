@@ -195,7 +195,8 @@ function renderPubList(pubs, idPrefix) {
     if (pub.code) html += ' <a class="code-link" href="' + pub.code + '" target="_blank" style="color:inherit;"><i class="fab fa-github" aria-hidden="true"></i></a>';
     if (pub.dataset) html += ' <a href="' + pub.dataset + '" target="_blank">&#128230;</a>';
     if (pub.bibtex) html += ' <a class="bib-link" href="#" id="' + sid + '" onclick="copyBibTeX(event,\'' + slugify(pub.title) + '\')">&#128206;</a>';
-    html += '<br><span class="pub-authors">' + pub.authors + '</span>';
+    var authors = pub.authors.replace(/Minghua Ma/g, '<strong>Minghua Ma</strong>');
+    html += '<br><span class="pub-authors">' + authors + '</span>';
     if (pub.award) html += '<br><strong class="pub-award">&#127942; ' + pub.award + '</strong>';
     html += '</li>';
   });
