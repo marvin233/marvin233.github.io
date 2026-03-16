@@ -15,7 +15,7 @@
 # =============================================================================
 
 - title: 'Triage in Software Engineering: A Systematic Review of Research and Practice'
-  topic: Survey
+  topic: Survey/Benchmark
   authors: Yongxin Zhao, Shenglin Zhang, Yujia Wu, Yuxin Sun, Yongqian Sun, Dan Pei, Chetan Bansal, Minghua Ma*
   category: journal
   paper: https://arxiv.org/abs/2511.08607
@@ -29,7 +29,7 @@
      year = {2025}
     }
 - title: Can Language Models Go Beyond Coding? Assessing the Capability of Language Models to Build Real-World Systems
-  topic: LLM & AI Agents
+  topic: Survey/Benchmark
   authors: Chenyu Zhao, Shenglin Zhang, Zeshun Huang, Weilin Jin, Yongqian Sun, Dan Pei, Chaoyun Zhang, Qingwei Lin, Chetan Bansal, Saravan Rajmohan, Minghua Ma*
   category: journal
   paper: https://arxiv.org/abs/2511.00780
@@ -41,7 +41,7 @@
       year={2025}
     }
 - title: 'GUI-360: A Comprehensive Dataset and Benchmark for Computer-Using Agents'
-  topic: LLM & AI Agents
+  topic: Survey/Benchmark
   authors: Jian Mu, Chaoyun Zhang, Chiming Ni, Lu Wang, Bo Qiao, Kartik Mathur, Qianhui Wu, Yuhang Xie, Xiaojun Ma, Mengyu Zhou, Si Qin, Liqun Li, Yu Kang, Minghua Ma, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang
   category: journal
   paper: https://arxiv.org/abs/2511.04307
@@ -53,7 +53,7 @@
       year={2025}
     }
 - title: 'OpsEval: A Comprehensive Benchmark Suite for Evaluating Large Language Models'' Capability in IT Operations Domain'
-  topic: LLM & AI Agents
+  topic: Survey/Benchmark
   authors: Yuhe Liu, Changhua Pei, Longlong Xu, Bohan Chen, Mingze Sun, Zhirui Zhang, Yongqian Sun, Shenglin Zhang, Kun Wang, Haiming Zhang, Jianhui Li, Gaogang Xie, Xidao Wen, Xiaohui Nie, Minghua Ma, Dan Pei
   category: conference
   venue: FSE'25
@@ -66,7 +66,7 @@
       year={2023}
     }
 - title: 'AIOpsLab: A Holistic Framework for Evaluating AI Agents for Enabling Autonomous Cloud'
-  topic: LLM & AI Agents
+  topic: Survey/Benchmark
   authors: Yinfang Chen, Manish Shetty, Gagan Somashekar, Minghua Ma*, Yogesh Simmhan, Jonathan Mace, Chetan Bansal, Rujia Wang, Saravan Rajmohan
   category: conference
   venue: MLSys'25
@@ -81,7 +81,7 @@
       year={2025}
     }
 - title: 'Large Language Model-Brained GUI Agents: A Survey'
-  topic: Survey
+  topic: Survey/Benchmark
   authors: Chaoyun Zhang, Shilin He, Jiaxu Qian, Bowen Li, Liqun Li, Si Qin, Yu Kang, Minghua Ma, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang, Qi Zhang
   category: journal
   venue: TMLR'25
@@ -94,7 +94,7 @@
       year={2024}
     }
 - title: 'Failure Diagnosis in Microservice Systems: A Comprehensive Survey and Analysis'
-  topic: Survey
+  topic: Survey/Benchmark
   authors: Shenglin Zhang, Sibo Xia, Wenzhao Fan, Binpeng Shi, Xiao Xiong, Zhenyu Zhong, Minghua Ma, Yongqian Sun, Dan Pei
   category: journal
   venue: TOSEM'25
@@ -107,7 +107,7 @@
       year={2025}
     }
 - title: A Survey of Time Series Anomaly Detection Methods in the AIOps Domain
-  topic: Survey
+  topic: Survey/Benchmark
   authors: Zhenyu Zhong and Qiliang Fan, Jiacheng Zhang, Minghua Ma, Shenglin Zhang, Yongqian Sun, Qingwei Lin, Yuzhi Zhang, Dan Pei
   category: journal
   paper: https://arxiv.org/abs/2308.00393
@@ -142,7 +142,7 @@
   category: conference
   venue: ICSE-SEIP'25
 - title: A Benchmark for Language Models in Real-World System Building
-  topic: LLM & AI Agents
+  topic: AI Agents
   authors: Weilin Jin, Chenyu Zhao, Zeshun Huang, Chaoyun Zhang, Qingwei Lin, Chetan Bansal, Saravan Rajmohan, Shenglin Zhang, Yongqian Sun, Dan Pei, Yifan Wu, Tong Jia, Ying Li, Zhonghai Wu, Minghua Ma*
   category: workshop
   venue: LLM4Code'25
@@ -215,7 +215,7 @@
       year={2025}
     }
 - title: 'UFO: A UI-Focused Agent for Windows OS Interaction'
-  topic: LLM & AI Agents
+  topic: AI Agents
   authors: Chaoyun Zhang, Liqun Li, Shilin He, Xu Zhang, Bo Qiao, Si Qin, Minghua Ma, Yu Kang, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang, Qi Zhang
   category: conference
   venue: NAACL'25
@@ -242,7 +242,7 @@
       organization={IEEE}
     }
 - title: 'AllHands: Ask Me Anything on Large-scale Verbatim Feedback via Large Language Models'
-  topic: LLM & AI Agents
+  topic: AI Agents
   authors: Chaoyun Zhang, Zicheng Ma, Yuhao Wu, Shilin He, Si Qin, Minghua Ma, Xiaoting Qin, Yu Kang, Yuyi Liang, Xiaoyu Gou, Yajie Xue, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang, Qi Zhang
   category: conference
   venue: ICDE'25
@@ -257,7 +257,7 @@
       organization={IEEE}
     }
 - title: 'Building AI Agents for Autonomous Clouds: Challenges and Design Principles'
-  topic: LLM & AI Agents
+  topic: AI Agents
   authors: Manish Shetty, Yinfang Chen, Gagan Somashekar, Minghua Ma, Yogesh Simmhan, Xuchao Zhang, Jonathan Mace, Dax Vandevoorde, Pedro Las-Casas, Shachee Mishra Gupta, Suman Nath, Chetan Bansal, Saravan Rajmohan
   category: conference
   venue: SoCC'24
@@ -311,7 +311,7 @@
       year={2024}
     }
 - title: Enhanced Fine-Tuning of Lightweight Domain-Specific Q&A model Based on Large Language Models
-  topic: LLM & AI Agents
+  topic: AI Agents
   authors: Shenglin Zhang, Pengtian Zhu, Minghua Ma, Jiagang Wang, Yongqian Sun, Dongwen Li, Jingyu Wang, Qianying Guo, Xiaolei Hua, Lin Zhu, Dan Pei
   category: conference
   venue: ISSRE'24
@@ -394,7 +394,7 @@
       year={2024}
     }
 - title: 'Everything of Thoughts: Defying the Law of Penrose Triangle for Thought Generation'
-  topic: LLM & AI Agents
+  topic: AI Agents
   authors: Ruomeng Ding, Chaoyun Zhang, Lu Wang, Yong Xu, Minghua Ma, Wei Zhang, Si Qin, Saravan Rajmohan, Qingwei Lin, Dongmei Zhang
   category: conference
   venue: ACL'24
@@ -821,7 +821,7 @@
       organization={IEEE}
     }
 - title: 'LLM-Enhanced Failure Localization in Microservices: Integrating Multi-Modal Data and Expert Interpretation'
-  topic: LLM & AI Agents
+  topic: AI Agents
   authors: Zhengyu Zhong, Ruowei Fu, Minghua Ma, Shenglin Zhang, Yongqian Sun, Chetan Bansal, Dan Pei
   category: journal
   venue: TSC'26
