@@ -14,6 +14,21 @@
 #   - award:         Award text, shown in red (optional)
 # =============================================================================
 
+- title: 'An Agentic Framework for Triaging Incidents in Production Cloud Infrastructure'
+  topic: incident management
+  authors: Yuhan Yao, Yuxuan Jiang, Minghua Ma*, Madhura Vaidya, Jieren Deng, Yigong Hu, Chetan Bansal, Ze Li, Murali Chintalapati
+  category: conference
+  venue: FSE'26
+- title: 'TSGen: Automated Troubleshooting Guide Generation'
+  topic: incident management
+  authors: Yi Xiao, Hongyu Zhang, Daniel Genkin, Chaoyun Zhang, Rujia Wang, Chetan Bansal, Bhala Ranganathan, Saravan Rajmohan, Minghua Ma*
+  category: conference
+  venue: FSE'26
+- title: 'Aloha: Localizing Batch Failures in Large-scale Cloud Systems via Contrast Analysis and Human-in-the-Loop Agent'
+  topic: incident management
+  authors: Shenglin Zhang, Yujia Wu, Jinghuan Ren, Yongqian Sun, Wenwei Gu, Chaoyun Zhang, Liqun Li, Qingwei Lin, Dongmei Zhang, Saravan Rajmohan, Chetan Bansal, Minghua Ma*
+  category: conference
+  venue: FSE'26
 - title: 'Triage in Software Engineering: A Systematic Review of Research and Practice'
   topic: Survey/Benchmark
   authors: Yongxin Zhao, Shenglin Zhang, Yujia Wu, Yuxin Sun, Yongqian Sun, Dan Pei, Chetan Bansal, Minghua Ma*
