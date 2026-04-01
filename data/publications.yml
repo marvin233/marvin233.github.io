@@ -160,7 +160,7 @@
   topic: AI Agents
   authors: Weilin Jin, Chenyu Zhao, Zeshun Huang, Chaoyun Zhang, Qingwei Lin, Chetan Bansal, Saravan Rajmohan, Shenglin Zhang, Yongqian Sun, Dan Pei, Yifan Wu, Tong Jia, Ying Li, Zhonghai Wu, Minghua Ma*
   category: workshop
-  venue: LLM4Code'25
+  venue: LLM4Code'26
   bibtex: |-
     @article{jin2026benchmark,
       title={A Benchmark for Language Models in Real-World System Building},
