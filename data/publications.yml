@@ -14,7 +14,7 @@
 #   - award:         Award text, shown in red (optional)
 # =============================================================================
 - title: 'EvidenT: An Evidence-Preserving Framework for Iterative System-Level Package Repair'
-  topic: Cloud Reliability
+  topic: AI Agents
   authors: Chenyu Zhao, Minghua Ma*, Shenglin Zhang, Zeshun Huang, Yongqian Sun, Chetan Bansal, Saravan Rajmohan, Dan Pei
   category: conference
   venue: ISSTA'26
