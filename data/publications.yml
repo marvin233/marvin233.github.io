@@ -13,7 +13,11 @@
 #   - bibtex:        BibTeX citation content, multiline (optional)
 #   - award:         Award text, shown in red (optional)
 # =============================================================================
-
+- title: 'EvidenT: An Evidence-Preserving Framework for Iterative System-Level Package Repair'
+  topic: Cloud Reliability
+  authors: Chenyu Zhao, Minghua Ma*, Shenglin Zhang, Zeshun Huang, Yongqian Sun, Chetan Bansal, Saravan Rajmohan, Dan Pei
+  category: conference
+  venue: ISSTA'26
 - title: 'An Agentic Framework for Triaging Incidents in Production Cloud Infrastructure'
   topic: incident management
   authors: Yuhan Yao, Yuxuan Jiang, Minghua Ma*, Madhura Vaidya, Jieren Deng, Yigong Hu, Chetan Bansal, Ze Li, Murali Chintalapati
