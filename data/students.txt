@@ -1,0 +1,28 @@
+# Students / Interns — First authors from publications where Minghua Ma is corresponding author (*)
+# Edit this list: remove names, add roles, reorder as needed.
+# Format: Name | Affiliation (if known) | Status (current/alumni) | Notable papers
+
+## Core mentees (multiple first-author papers, you as *)
+Chenyu Zhao        | | | ISSTA'26, TOSEM'25, KDD'23
+Zhaoyang Yu         | | | ASE'25, KDD'24, FSE'24
+Yudong Liu          | | | ISSRE'24, KDD'22, TheWebConf'22
+Yinfang Chen        | | | MLSys'25, EuroSys'24
+Haozhe Li           | | | ISSRE'24, ISSRE'23
+Zexin Wang          | | | ISSRE'24, TheWebConf'24
+
+## Single first-author paper, you as *
+Yuhan Yao           | | | FSE'26
+Yi Xiao             | | | FSE'26
+Yongxin Zhao        | | | Triage survey
+Weilin Jin          | | | LLM4Code'26
+Haoran Yan          | | | ISSRE'25
+Zhengyu Zhong       | | | TSC'26
+
+## Frequent collaborators (first-authored papers, you NOT as * but closely involved)
+Shenglin Zhang      | | | FSE'26, ISSRE'25, ASE'24, TOSEM'25
+Yongqian Sun        | | | ASE'24, SANER'25
+Pengxiang Jin       | | | FSE'23
+Xiaoting Qin        | | | DSN'23
+Ruomeng Ding        | | | ACL'24, FSE'23
+Zhe Xie             | | | KDD'24
+Zhao Tian           | | | TOSEM'25

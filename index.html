@@ -2,7 +2,7 @@
 <html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
-  <title>About - Dr. Minghua Ma</title>
+  <title>Dr. Minghua Ma</title>
   <meta name="description" content="Senior Researcher at Microsoft">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="canonical" href="https://marvin233.github.io/">
@@ -28,14 +28,23 @@
           <li class="masthead__menu-item masthead__menu-item--lg persist selected">
             <a href="/">Dr. Minghua Ma</a>
           </li>
-          <li class="masthead__menu-item">
-            <a href="/publications/">Publications</a>
+          <li class="masthead__menu-item nav-spacer" style="margin-left:2em;">
+            <a href="#news">News</a>
           </li>
           <li class="masthead__menu-item">
-            <a href="/services/">Services</a>
+            <a href="#experience">Experience</a>
           </li>
           <li class="masthead__menu-item">
-            <a href="/activities/">Others</a>
+            <a href="#awards">Awards</a>
+          </li>
+          <li class="masthead__menu-item">
+            <a href="#teaching">Teaching</a>
+          </li>
+          <li class="masthead__menu-item">
+            <a href="#services">Services</a>
+          </li>
+          <li class="masthead__menu-item">
+            <a href="#publications">Publications</a>
           </li>
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon">
@@ -106,6 +115,7 @@
           in the <a href="https://netman.aiops.org/">Netman</a> Group.
           His research interests are primarily focused on
           <a href="https://www.microsoft.com/en-us/research/group/aiops/">AIOps</a>, AI4SE, and SE4AI.
+          He has published 60+ papers at top venues including ICSE, FSE, KDD, EuroSys, VLDB, and MLSys.
           He is a Senior Member of CCF.
         </p>
 
@@ -151,7 +161,7 @@
 
         <h2 id="news">News</h2>
 
-        <div class="news-cards">
+        <div class="news-cards" id="news-cards">
           <div class="news-card">
             <div class="news-year">2026</div>
             <div class="news-body">
@@ -189,6 +199,7 @@
             </div>
           </div>
         </div>
+        <button class="news-toggle" id="news-toggle" onclick="toggleNews()">Show more</button>
 
         <h2 id="experience">Experience</h2>
 
@@ -224,10 +235,108 @@
           </div>
         </div>
 
+        <h2 id="awards">Awards</h2>
+
+        <ul>
+          <li>&#127942; <strong>IEEE ISSRE 2025 Best Research Paper Candidate</strong><br>
+            "Too Many Cooks: Assessing the Need for Multi-Source Data in Microservice Failure Diagnosis"</li>
+          <li>&#127942; <strong>IEEE ISSRE 2024 Best Industry Paper Candidate</strong><br>
+            "Early Bird: Ensuring Reliability of Cloud Systems Through Early Failure Prediction"</li>
+          <li>&#127942; <strong>IEEE ISSRE 2018 Best Research Paper</strong><br>
+            "Robust and Rapid Adaption for Concept Drift in Software System Anomaly Detection"</li>
+          <li>&#127891; <strong>Outstanding Graduate</strong><br>
+            Department of Computer Science and Technology, Tsinghua University, 2021</li>
+        </ul>
+
+        <h2 id="teaching">Teaching</h2>
+
+        <ul>
+          <li><strong>Mentor</strong>
+            <ul>
+              <li>2026 Spring: <strong>Boston University</strong> &ndash; <a href="https://www.bu.edu/academics/eng/courses/eng-ec-528/">EC-528 Cloud Computing</a></li>
+            </ul>
+          </li>
+          <li><strong>TA</strong>
+            <ul>
+              <li>2017 Fall: <strong>Tsinghua University</strong> &ndash; Software Engineering</li>
+              <li>2017 Spring: <strong>Tsinghua University</strong> &ndash; <a href="https://netman.aiops.org/courses/advanced-network-management-spring2017-course/">Advanced Network Management</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2 id="services">Services</h2>
+
+        <ul>
+          <li><strong>Organizer</strong>
+            <ul>
+              <li><a href="https://conf.researchr.org/home/saner-2027">SANER 2027</a>: <strong>Tool Demo Track Chair</strong></li>
+              <li><a href="https://conf.researchr.org/home/ease-2026">EASE 2026</a>: <strong>Industry Track Chair</strong></li>
+              <li><a href="https://competition.aiops.cn/">The 4th CCF AIOps Challenge</a>: <strong>Technical Chair</strong></li>
+            </ul>
+          </li>
+          <li><strong>PC Member</strong>
+            <ul>
+              <li>2026: FSE Industry, TheWebConf, COLM, AIOps Workshop</li>
+              <li>2025: FSE, FSE Industry, ASE, ISSRE, KDD, COLM</li>
+              <li>2024: FSE Industry, ISSRE, APSEC, KDD, TheWebConf, MILETS</li>
+              <li>2023: ASE, KDD, MILETS</li>
+            </ul>
+          </li>
+          <li><strong>Journal Reviewer</strong>
+            <ul>
+              <li>ACM Transactions on Intelligent Systems and Technology (TIST)</li>
+              <li>ACM Transactions on Software Engineering and Methodology (TOSEM)</li>
+              <li>IEEE Transactions on Knowledge and Data Engineering (TKDE)</li>
+              <li>IEEE Transactions on Services Computing (TSC)</li>
+              <li>IEEE Transactions on Cloud Computing (TCC)</li>
+              <li>Neurocomputing</li>
+            </ul>
+          </li>
+          <li id="talks"><strong>Talks</strong>
+            <ul>
+              <li>"LLM-based Root Cause Analysis for Cloud Incidents" (Keynote), CCF AIOps Challenge, Beijing, 2023.</li>
+              <li>"Improving Cloud Reliability at Scale using Generative AI" (Invited), University of Michigan, Online, 2025.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2 id="publications">Publications</h2>
+
+        <p>
+          * corresponding author, <sup>+</sup> equal contribution,
+          &#128221; paper,
+          <span style="color:inherit;"><i class="fab fa-github" aria-hidden="true"></i></span> code,
+          &#128230; dataset, and &#128206; BibTeX.
+        </p>
+
+        <!-- BibTeX popup -->
+        <div id="notification" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); z-index:1000; background:var(--global-bg-color,#fff); color:var(--global-text-color,#333); border:1px solid var(--global-border-color,#ccc); border-radius:8px; box-shadow:0 4px 20px rgba(0,0,0,0.25); padding:20px; max-width:700px; width:90%; max-height:70vh; overflow-y:auto;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+            <strong id="bibtex-title" style="font-size:1.1em;">&#128206; BibTeX (copied to clipboard)</strong>
+            <button onclick="closePopup()" style="background:none; border:none; font-size:1.4em; cursor:pointer; color:#666;">&times;</button>
+          </div>
+          <pre id="bibtex-content" style="background:var(--callout-bg,#f5f5f5); padding:12px; border-radius:4px; overflow-x:auto; white-space:pre-wrap; word-break:break-all; font-size:0.9em; margin:0;"></pre>
+        </div>
+        <div id="notification-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.3); z-index:999;" onclick="closePopup()"></div>
+
+        <!-- View toggle -->
+        <div class="pub-view-toggle">
+          <button class="pub-view-btn active" onclick="switchView('topic')">By Topic</button>
+          <button class="pub-view-btn" onclick="switchView('venue')">By Venue Type</button>
+        </div>
+
+        <div id="view-topic"></div>
+        <div id="view-venue" style="display:none;"></div>
+
+        <p id="loading-msg"><em>Loading publications...</em></p>
+
       </section>
     </div>
   </article>
 </div>
+
+<!-- Back to top -->
+<a href="#" id="back-to-top" aria-label="Back to top" style="display:none;position:fixed;bottom:2em;right:2em;z-index:90;background:var(--global-base-color);color:#fff;border:none;border-radius:50%;width:2.5em;height:2.5em;font-size:1.1em;cursor:pointer;text-decoration:none;text-align:center;line-height:2.5em;box-shadow:0 2px 8px rgba(0,0,0,0.2);transition:opacity 0.3s;">&#x2191;</a>
 
 <!-- Footer -->
 <div class="page__footer">
@@ -263,5 +372,200 @@
 </div>
 
 <script type="module" src="/assets/js/main.min.js"></script>
+
+<script>
+/* ---- Back to top ---- */
+(function() {
+  var btn = document.getElementById('back-to-top');
+  window.addEventListener('scroll', function() {
+    btn.style.display = window.scrollY > 400 ? 'block' : 'none';
+  });
+})();
+
+/* ---- Active nav highlight on scroll ---- */
+(function() {
+  var sections = document.querySelectorAll('h2[id]');
+  var navLinks = document.querySelectorAll('.greedy-nav .visible-links a[href^="#"]');
+  window.addEventListener('scroll', function() {
+    var scrollPos = window.scrollY + 80;
+    var current = '';
+    sections.forEach(function(s) {
+      if (s.offsetTop <= scrollPos) current = s.id;
+    });
+    navLinks.forEach(function(a) {
+      a.parentElement.classList.remove('nav-active');
+      if (a.getAttribute('href') === '#' + current) {
+        a.parentElement.classList.add('nav-active');
+      }
+    });
+  });
+})();
+
+/* ---- News toggle ---- */
+(function() {
+  var cards = document.getElementById('news-cards');
+  var btn = document.getElementById('news-toggle');
+  var MAX_VISIBLE = 5;
+  if (cards.children.length <= MAX_VISIBLE) {
+    btn.style.display = 'none';
+  } else {
+    cards.classList.add('collapsed');
+  }
+})();
+function toggleNews() {
+  var cards = document.getElementById('news-cards');
+  var btn = document.getElementById('news-toggle');
+  if (cards.classList.contains('collapsed')) {
+    cards.classList.remove('collapsed');
+    btn.textContent = 'Show less';
+  } else {
+    cards.classList.add('collapsed');
+    btn.textContent = 'Show more';
+  }
+}
+</script>
+
+<!-- js-yaml for parsing publications.yml -->
+<script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
+
+<script>
+/* ---- Helpers ---- */
+function slugify(str) {
+  return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+}
+
+function closePopup() {
+  document.getElementById('notification').style.display = 'none';
+  document.getElementById('notification-overlay').style.display = 'none';
+}
+
+var bibtexData = {};
+var lastCopiedId = null;
+
+function copyBibTeX(event, id) {
+  event.preventDefault();
+  var bib = bibtexData[id];
+  if (!bib) { alert('BibTeX not found'); return; }
+  if (navigator.clipboard) navigator.clipboard.writeText(bib);
+  if (lastCopiedId) {
+    var el = document.getElementById(lastCopiedId);
+    if (el) el.textContent = '\u{1F4CE}';
+  }
+  var el = document.getElementById(id);
+  if (el) el.textContent = 'Copied!';
+  lastCopiedId = id;
+  document.getElementById('bibtex-content').textContent = bib;
+  document.getElementById('bibtex-title').innerHTML = '&#128206; BibTeX (copied to clipboard)';
+  document.getElementById('notification').style.display = 'block';
+  document.getElementById('notification-overlay').style.display = 'block';
+  setTimeout(closePopup, 1000);
+}
+
+function copyGroupBib(event, entries) {
+  event.preventDefault();
+  var allBib = entries.join('\n\n');
+  if (navigator.clipboard) navigator.clipboard.writeText(allBib);
+  document.getElementById('bibtex-title').textContent = 'Copied ' + entries.length + ' BibTeX entries';
+  document.getElementById('bibtex-content').textContent = allBib;
+  document.getElementById('notification').style.display = 'block';
+  document.getElementById('notification-overlay').style.display = 'block';
+  setTimeout(closePopup, 2000);
+}
+
+/* ---- Render a list of publications ---- */
+function renderPubList(pubs, idPrefix) {
+  var html = '<ul class="pub-list">';
+  pubs.forEach(function(pub) {
+    var sid = idPrefix + slugify(pub.title);
+    if (pub.bibtex) bibtexData[slugify(pub.title)] = pub.bibtex;
+    html += '<li>';
+    if (pub.venue) html += '<span class="pub-venue">' + pub.venue + '</span> ';
+    html += '<span class="pub-title">' + pub.title + '</span>';
+    if (pub.paper) html += ' <a href="' + pub.paper + '" target="_blank">&#128221;</a>';
+    if (pub.code) html += ' <a class="code-link" href="' + pub.code + '" target="_blank" style="color:inherit;"><i class="fab fa-github" aria-hidden="true"></i></a>';
+    if (pub.dataset) html += ' <a href="' + pub.dataset + '" target="_blank">&#128230;</a>';
+    if (pub.bibtex) html += ' <a class="bib-link" href="#" id="' + sid + '" onclick="copyBibTeX(event,\'' + slugify(pub.title) + '\')">&#128206;</a>';
+    var authors = pub.authors.replace(/Minghua Ma/g, '<strong>Minghua Ma</strong>');
+    html += '<br><span class="pub-authors">' + authors + '</span>';
+    if (pub.award) html += '<br><strong class="pub-award">&#127942; ' + pub.award + '</strong>';
+    html += '</li>';
+  });
+  html += '</ul>';
+  return html;
+}
+
+/* ---- Extract year from venue ---- */
+function getPubYear(pub) {
+  if (!pub.venue) return 9999;
+  var m = pub.venue.match(/'(\d{2})\b/);
+  if (m) return 2000 + parseInt(m[1], 10);
+  if (pub.bibtex) {
+    var m2 = pub.bibtex.match(/year\s*=\s*\{?(\d{4})\}?/);
+    if (m2) return parseInt(m2[1], 10);
+  }
+  return 9999;
+}
+
+/* ---- Build grouped view ---- */
+function buildGroupView(pubs, field, groups, container) {
+  var html = '';
+  groups.forEach(function(g) {
+    var label = g.label || g.key;
+    var filtered = pubs.filter(function(p) { return p[field] === g.key; });
+    if (filtered.length === 0) return;
+    filtered.sort(function(a, b) {
+      var ya = getPubYear(a), yb = getPubYear(b);
+      if (ya === 9999 && yb !== 9999) return 1;
+      if (yb === 9999 && ya !== 9999) return -1;
+      return yb - ya;
+    });
+    var groupBib = filtered.filter(function(p){ return p.bibtex; }).map(function(p){ return p.bibtex; });
+    html += '<h3>' + label;
+    if (groupBib.length > 0) {
+      html += ' <a class="bib-group-btn" href="#" onclick="copyGroupBib(event, ' + JSON.stringify(groupBib).replace(/"/g, '&quot;') + ')">&#128206;</a>';
+    }
+    html += '</h3>';
+    html += renderPubList(filtered, g.key.substring(0,2) + '-');
+  });
+  container.innerHTML = html;
+}
+
+/* ---- View toggle ---- */
+function switchView(view) {
+  document.getElementById('view-topic').style.display = view === 'topic' ? '' : 'none';
+  document.getElementById('view-venue').style.display = view === 'venue' ? '' : 'none';
+  var btns = document.querySelectorAll('.pub-view-btn');
+  btns.forEach(function(b) { b.classList.remove('active'); });
+  event.target.classList.add('active');
+}
+
+/* ---- Load and render ---- */
+fetch('/data/publications.yml')
+  .then(function(r) { return r.text(); })
+  .then(function(text) {
+    var pubs = jsyaml.load(text);
+    document.getElementById('loading-msg').style.display = 'none';
+
+    var topicGroups = [
+      { key: 'Survey/Benchmark', label: 'Survey/Benchmark' },
+      { key: 'AI Agents', label: 'AI Agents' },
+      { key: 'Incident Management', label: 'Incident Management' },
+      { key: 'Cloud Reliability', label: 'Cloud Reliability' },
+      { key: 'Anomaly Detection', label: 'Anomaly Detection' },
+      { key: 'Networking', label: 'Networking' }
+    ];
+    var venueGroups = [
+      { key: 'conference', label: 'Conference' },
+      { key: 'journal', label: 'Journal' },
+      { key: 'workshop', label: 'Workshop' }
+    ];
+
+    buildGroupView(pubs, 'topic', topicGroups, document.getElementById('view-topic'));
+    buildGroupView(pubs, 'category', venueGroups, document.getElementById('view-venue'));
+  })
+  .catch(function(err) {
+    document.getElementById('loading-msg').textContent = 'Failed to load publications: ' + err;
+  });
+</script>
 </body>
 </html>
