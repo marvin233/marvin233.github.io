@@ -51,6 +51,7 @@
   topic: Survey/Benchmark
   authors: Chenyu Zhao, Shenglin Zhang, Zeshun Huang, Weilin Jin, Yongqian Sun, Dan Pei, Chaoyun Zhang, Qingwei Lin, Chetan Bansal, Saravan Rajmohan, Minghua Ma*
   category: journal
+  venue: TOSEM'26
   paper: https://arxiv.org/abs/2511.00780
   bibtex: |-
     @article{zhao2025can,
