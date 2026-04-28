@@ -9,7 +9,6 @@
 #   - category:      conference | journal | workshop | preprint (required)
 #   - paper:         URL to paper PDF / preprint (optional)
 #   - code:          URL to code repository (optional)
-#   - dataset:       URL to dataset (optional)
 #   - homepage:      URL to homepage (optional)
 #   - bibtex:        BibTeX citation content, multiline (optional)
 #   - award:         Award text, shown in red (optional)
@@ -69,7 +68,6 @@
   category: preprint
   paper: https://arxiv.org/abs/2511.04307
   code: https://github.com/2020-qqtcg/GUI-360
-  dataset: https://huggingface.co/papers/2511.04307
   bibtex: |-
     @article{mu2025gui,
       title={Gui-360: A comprehensive dataset and benchmark for computer-using agents},
@@ -151,7 +149,7 @@
   authors: Zeyan Li, Nengwen Zhao, Shenglin Zhang, Yongqian Sun, Pengfei Chen, Xidao Wen, Minghua Ma, Dan Pei
   category: preprint
   paper: https://arxiv.org/abs/2208.03938
-  dataset: https://github.com/NetManAIOps
+  code: https://github.com/NetManAIOps
   bibtex: |-
     @article{li2022constructing,
       title={Constructing large-scale real-world benchmark datasets for aiops},

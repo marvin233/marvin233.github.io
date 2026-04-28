@@ -302,11 +302,13 @@
 
         <h2 id="publications">Publications</h2>
 
-        <p>
-          * corresponding author, <sup>+</sup> equal contribution,
-          &#128221; paper,
-          <span style="color:inherit;"><i class="fab fa-github" aria-hidden="true"></i></span> code,
-          &#128230; dataset, and &#128206; BibTeX.
+        <p class="pub-legend">
+          <span>* corresponding author</span>
+          <span><sup>+</sup> equal contribution</span>
+          <span>&#128221; paper</span>
+          <span><i class="fab fa-github" aria-hidden="true"></i> code</span>
+          <span>&#127968; homepage</span>
+          <span>&#128206; BibTeX</span>
         </p>
 
         <!-- BibTeX popup -->
@@ -483,7 +485,6 @@ function renderPubList(pubs, idPrefix) {
     html += '<span class="pub-title">' + pub.title + '</span>';
     if (pub.paper) html += ' <a href="' + pub.paper + '" target="_blank">&#128221;</a>';
     if (pub.code) html += ' <a class="code-link" href="' + pub.code + '" target="_blank" style="color:inherit;"><i class="fab fa-github" aria-hidden="true"></i></a>';
-    if (pub.dataset) html += ' <a href="' + pub.dataset + '" target="_blank">&#128230;</a>';
     if (pub.homepage) html += ' <a href="' + pub.homepage + '" target="_blank">&#127968;</a>';
     if (pub.bibtex) html += ' <a class="bib-link" href="#" id="' + sid + '" onclick="copyBibTeX(event,\'' + slugify(pub.title) + '\')">&#128206;</a>';
     var authors = pub.authors.replace(/Minghua Ma/g, '<strong>Minghua Ma</strong>');
