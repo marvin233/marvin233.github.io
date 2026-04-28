@@ -364,6 +364,7 @@
   authors: Zexin Wang, Jianhui Li, Minghua Ma*, Ze Li, Yu Kang, Chaoyun Zhang, Chetan Bansal, Murali Chintalapati, Saravan Rajmohan, Qingwei Lin, Dongmei Zhang, Changhua Pei, Gaogang Xie
   category: conference
   venue: ISSRE'24
+  paper: https://www.microsoft.com/en-us/research/wp-content/uploads/2024/08/ISSRE24_LLM4triage.pdf
   bibtex: |-
     @inproceedings{wang2024large,
       title={Large Language Models Can Provide Accurate and Interpretable Incident Triage},
