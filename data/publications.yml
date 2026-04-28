@@ -53,6 +53,8 @@
   category: journal
   venue: TOSEM'26
   paper: https://arxiv.org/abs/2511.00780
+  code: https://github.com/zcyyc/Build-bench
+  dataset: https://buildbench-hub.github.io/buildbench.github.io
   bibtex: |-
     @article{zhao2025can,
       title={Can language models go beyond coding? assessing the capability of language models to build real-world systems},
@@ -65,6 +67,8 @@
   authors: Jian Mu, Chaoyun Zhang, Chiming Ni, Lu Wang, Bo Qiao, Kartik Mathur, Qianhui Wu, Yuhang Xie, Xiaojun Ma, Mengyu Zhou, Si Qin, Liqun Li, Yu Kang, Minghua Ma, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang
   category: journal
   paper: https://arxiv.org/abs/2511.04307
+  code: https://github.com/2020-qqtcg/GUI-360
+  dataset: https://huggingface.co/papers/2511.04307
   bibtex: |-
     @article{mu2025gui,
       title={Gui-360: A comprehensive dataset and benchmark for computer-using agents},
@@ -78,6 +82,7 @@
   category: conference
   venue: FSE'25
   paper: https://arxiv.org/abs/2310.07637
+  dataset: https://opseval.cstcloud.cn/content/home
   bibtex: |-
     @article{liu2023opseval,
       title={Opseval: A comprehensive benchmark suite for evaluating large language models' capability in it operations domain},
@@ -92,6 +97,7 @@
   venue: MLSys'25
   paper: https://www.microsoft.com/en-us/research/publication/aiopslab-a-holistic-framework-for-evaluating-ai-agents-for-enabling-autonomous-cloud/
   code: https://github.com/microsoft/aiopslab
+  dataset: https://microsoft.github.io/AIOpsLab
   bibtex: |-
     @article{chen2025aiopslab,
       title={Aiopslab: A holistic framework to evaluate ai agents for enabling autonomous clouds},
@@ -106,6 +112,7 @@
   category: journal
   venue: TMLR'25
   paper: https://arxiv.org/abs/2411.18279
+  code: https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey
   bibtex: |-
     @article{zhang2024large,
       title={Large language model-brained gui agents: A survey},
