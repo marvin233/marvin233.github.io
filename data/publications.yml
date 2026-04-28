@@ -156,6 +156,11 @@
   authors: Bhala Ranganathan, Minghua Ma, Mickey Zhang, Klein Hu, Rakesh Kelkar, Chetan Bansal
   category: workshop
   venue: AIOps'26
+  bibtex: |-
+      @article{ranganathanempirical,
+      title={An Empirical Study of Automation Gaps in LLM Serving Systems},
+      author={Ranganathan, Bhala and Ma, Minghua and Zhang, Mickey and Hu, Klein and Kelkar, Rakesh and Bansal, Chetan}
+    }
 - title: 'Intelligent Triage: Interpretable Incident Triage Workflow using LLM Extracted Triage Reasoning'
   topic: Incident Management
   authors: Jianing Liu, Hao Ren, Yu Kang, Minghua Ma, Fangkai Yang, Yong Xu, Xin Gao, Meng Zhang, Hongbin Wang, Xuedong Gao, Dongmei Zhang, Qi Zhang, Chetan Bansal, Saravan Rajmohan, Yingnong Dang
@@ -846,11 +851,29 @@
   authors: Zhengyu Zhong, Ruowei Fu, Minghua Ma, Shenglin Zhang, Yongqian Sun, Chetan Bansal, Dan Pei
   category: journal
   venue: TSC'26
+  paper: https://ieeexplore.ieee.org/document/11449471
+  bibtex: |-
+    @article{zhong2026llm,
+      title={LLM-Enhanced Failure Localization in Microservices: Integrating Multi-Modal Data and Expert Interpretation},
+      author={Zhong, Zhenyu and Fu, Ruowei and Ma, Minghua and Zhang, Shenglin and Sun, Yongqian and Bansal, Chetan and Pei, Dan},
+      journal={IEEE Transactions on Services Computing},
+      year={2026},
+      publisher={IEEE}
+    }
 - title: 'Bridging Edge and Cloud: A Knowledge-Enhanced Framework for Efficient Time Series Anomaly Detection'
   topic: Anomaly Detection
   authors: Shenglin Zhang, Jiacheng Zhang, Guohua Liu, Shiqi Chen, Chenyu Zhao, Minghua Ma, Yutong Chen, Yongqian Sun, Dan Pei
   category: journal
   venue: TSC'25
+  paper: https://ieeexplore.ieee.org/abstract/document/11165203
+  bibtex: |-
+    @article{zhang2024bridging,
+      title={Bridging edge and cloud: A knowledge-enhanced framework for efficient time series anomaly detection},
+      author={Zhang, Shenglin and Zhang, Jiacheng and Liu, Guohua and Chen, Shiqi and Zhao, Chenyu and Ma, Minghua and Chen, Yutong and Sun, Yongqian and Pei, Dan},
+      journal={IEEE Transactions on Services Computing},
+      year={2024},
+      publisher={IEEE}
+    }
 - title: Enhanced Fairness Testing via Generating Effective Initial Individual Discriminatory Instances
   topic: Cloud Reliability
   authors: Zhao Tian, Minghua Ma, Max Hort, Federica Sarro, Hongyu Zhang
