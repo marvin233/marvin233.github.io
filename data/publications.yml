@@ -164,7 +164,7 @@
   category: workshop
   venue: AIOps'26
   bibtex: |-
-      @article{ranganathanempirical,
+    @article{ranganathanempirical,
       title={An Empirical Study of Automation Gaps in LLM Serving Systems},
       author={Ranganathan, Bhala and Ma, Minghua and Zhang, Mickey and Hu, Klein and Kelkar, Rakesh and Bansal, Chetan}
     }
