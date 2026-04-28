@@ -6,10 +6,11 @@
 #   - topic:         Research topic, e.g. "Incident Management" (required)
 #   - authors:       Author string (required); "Minghua Ma" is auto-bolded
 #   - venue:         Short venue label, e.g. "FSE'24" (optional)
-#   - category:      conference | journal | workshop (required)
+#   - category:      conference | journal | workshop | preprint (required)
 #   - paper:         URL to paper PDF / preprint (optional)
 #   - code:          URL to code repository (optional)
 #   - dataset:       URL to dataset (optional)
+#   - homepage:      URL to homepage (optional)
 #   - bibtex:        BibTeX citation content, multiline (optional)
 #   - award:         Award text, shown in red (optional)
 # =============================================================================
@@ -36,7 +37,7 @@
 - title: 'Triage in Software Engineering: A Systematic Review of Research and Practice'
   topic: Survey/Benchmark
   authors: Yongxin Zhao, Shenglin Zhang, Yujia Wu, Yuxin Sun, Yongqian Sun, Dan Pei, Chetan Bansal, Minghua Ma*
-  category: journal
+  category: preprint
   paper: https://arxiv.org/abs/2511.08607
   bibtex: |-
     @Article{zhao2025triage,
@@ -54,7 +55,7 @@
   venue: TOSEM'26
   paper: https://arxiv.org/abs/2511.00780
   code: https://github.com/zcyyc/Build-bench
-  dataset: https://buildbench-hub.github.io/buildbench.github.io
+  homepage: https://buildbench-hub.github.io/buildbench.github.io
   bibtex: |-
     @article{zhao2025can,
       title={Can language models go beyond coding? assessing the capability of language models to build real-world systems},
@@ -65,7 +66,7 @@
 - title: 'GUI-360: A Comprehensive Dataset and Benchmark for Computer-Using Agents'
   topic: Survey/Benchmark
   authors: Jian Mu, Chaoyun Zhang, Chiming Ni, Lu Wang, Bo Qiao, Kartik Mathur, Qianhui Wu, Yuhang Xie, Xiaojun Ma, Mengyu Zhou, Si Qin, Liqun Li, Yu Kang, Minghua Ma, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang
-  category: journal
+  category: preprint
   paper: https://arxiv.org/abs/2511.04307
   code: https://github.com/2020-qqtcg/GUI-360
   dataset: https://huggingface.co/papers/2511.04307
@@ -82,7 +83,7 @@
   category: conference
   venue: FSE'25
   paper: https://arxiv.org/abs/2310.07637
-  dataset: https://opseval.cstcloud.cn/content/home
+  homepage: https://opseval.cstcloud.cn/content/home
   bibtex: |-
     @article{liu2023opseval,
       title={Opseval: A comprehensive benchmark suite for evaluating large language models' capability in it operations domain},
@@ -97,7 +98,7 @@
   venue: MLSys'25
   paper: https://www.microsoft.com/en-us/research/publication/aiopslab-a-holistic-framework-for-evaluating-ai-agents-for-enabling-autonomous-cloud/
   code: https://github.com/microsoft/aiopslab
-  dataset: https://microsoft.github.io/AIOpsLab
+  homepage: https://microsoft.github.io/AIOpsLab
   bibtex: |-
     @article{chen2025aiopslab,
       title={Aiopslab: A holistic framework to evaluate ai agents for enabling autonomous clouds},
@@ -136,7 +137,7 @@
 - title: A Survey of Time Series Anomaly Detection Methods in the AIOps Domain
   topic: Survey/Benchmark
   authors: Zhenyu Zhong and Qiliang Fan, Jiacheng Zhang, Minghua Ma, Shenglin Zhang, Yongqian Sun, Qingwei Lin, Yuzhi Zhang, Dan Pei
-  category: journal
+  category: preprint
   paper: https://arxiv.org/abs/2308.00393
   bibtex: |-
     @article{zhong2023survey,
@@ -146,9 +147,9 @@
       year={2023}
     }
 - title: Constructing Large-Scale Real-World Benchmark Datasets for AIOps
-  topic: Cloud Reliability
+  topic: Survey/Benchmark
   authors: Zeyan Li, Nengwen Zhao, Shenglin Zhang, Yongqian Sun, Pengfei Chen, Xidao Wen, Minghua Ma, Dan Pei
-  category: journal
+  category: preprint
   paper: https://arxiv.org/abs/2208.03938
   dataset: https://github.com/NetManAIOps
   bibtex: |-
@@ -252,12 +253,40 @@
   category: conference
   venue: NAACL'25
   paper: https://arxiv.org/abs/2402.07939
+  code: https://github.com/microsoft/UFO
   bibtex: |-
     @article{zhang2024ufo,
       title={Ufo: A ui-focused agent for windows os interaction},
       author={Zhang, Chaoyun and Li, Liqun and He, Shilin and Zhang, Xu and Qiao, Bo and Qin, Si and Ma, Minghua and Kang, Yu and Lin, Qingwei and Rajmohan, Saravan and others},
       journal={arXiv preprint arXiv:2402.07939},
       year={2024}
+    }
+- title: 'UFO2: The Desktop AgentOS'
+  topic: AI Agents
+  authors: Chaoyun Zhang, He Huang, Chiming Ni, Jian Mu, Si Qin, Shilin He, Lu Wang, Fangkai Yang, Pu Zhao, Chao Du, Liqun Li, Yu Kang, Zhao Jiang, Suzhen Zheng, Rujia Wang, Jiaxu Qian, Minghua Ma, Jian-Guang Lou, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang
+  category: preprint
+  paper: https://arxiv.org/abs/2504.14603
+  code: https://github.com/microsoft/UFO
+  bibtex: |-
+    @article{zhang2025ufo2,
+      title={{UFO2: The Desktop AgentOS}},
+      author={Zhang, Chaoyun and Huang, He and Ni, Chiming and Mu, Jian and Qin, Si and He, Shilin and Wang, Lu and Yang, Fangkai and Zhao, Pu and Du, Chao and Li, Liqun and Kang, Yu and Jiang, Zhao and Zheng, Suzhen and Wang, Rujia and Qian, Jiaxu and Ma, Minghua and Lou, Jian-Guang and Lin, Qingwei and Rajmohan, Saravan and Zhang, Dongmei},
+      journal={arXiv preprint arXiv:2504.14603},
+      year={2025}
+    }
+- title: 'UFO3: Weaving the Digital Agent Galaxy'
+  topic: AI Agents
+  authors: Chaoyun Zhang, Liqun Li, He Huang, Chiming Ni, Bo Qiao, Si Qin, Yu Kang, Minghua Ma, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang
+  category: preprint
+  paper: https://arxiv.org/abs/2511.11332
+  code: https://github.com/microsoft/UFO
+  homepage: https://microsoft.github.io/UFO
+  bibtex: |-
+    @article{zhang2025ufo3,
+      title={UFO$^3$: Weaving the Digital Agent Galaxy},
+      author={Zhang, Chaoyun and Li, Liqun and Huang, He and Ni, Chiming and Qiao, Bo and Qin, Si and Kang, Yu and Ma, Minghua and Lin, Qingwei and Rajmohan, Saravan and Zhang, Dongmei},
+      journal={arXiv preprint arXiv:2511.11332},
+      year={2025}
     }
 - title: 'AIOpsArena: Scenario-Oriented Evaluation and Leaderboard for AIOps Algorithms in Microservices'
   topic: Cloud Reliability

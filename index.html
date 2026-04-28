@@ -484,6 +484,7 @@ function renderPubList(pubs, idPrefix) {
     if (pub.paper) html += ' <a href="' + pub.paper + '" target="_blank">&#128221;</a>';
     if (pub.code) html += ' <a class="code-link" href="' + pub.code + '" target="_blank" style="color:inherit;"><i class="fab fa-github" aria-hidden="true"></i></a>';
     if (pub.dataset) html += ' <a href="' + pub.dataset + '" target="_blank">&#128230;</a>';
+    if (pub.homepage) html += ' <a href="' + pub.homepage + '" target="_blank">&#127968;</a>';
     if (pub.bibtex) html += ' <a class="bib-link" href="#" id="' + sid + '" onclick="copyBibTeX(event,\'' + slugify(pub.title) + '\')">&#128206;</a>';
     var authors = pub.authors.replace(/Minghua Ma/g, '<strong>Minghua Ma</strong>');
     html += '<br><span class="pub-authors">' + authors + '</span>';
@@ -557,7 +558,8 @@ fetch('/data/publications.yml')
     var venueGroups = [
       { key: 'conference', label: 'Conference' },
       { key: 'journal', label: 'Journal' },
-      { key: 'workshop', label: 'Workshop' }
+      { key: 'workshop', label: 'Workshop' },
+      { key: 'preprint', label: 'Preprint' }
     ];
 
     buildGroupView(pubs, 'topic', topicGroups, document.getElementById('view-topic'));
