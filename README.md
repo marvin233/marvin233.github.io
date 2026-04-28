@@ -7,16 +7,13 @@ Pure HTML/CSS/JS — no build step required. Deployed via GitHub Pages.
 ## Structure
 
 ```
-index.html               # Homepage (About)
-publications/index.html  # Publications (loads data/publications.yml via JS)
-services/index.html      # Academic services
-activities/index.html    # Awards, Teaching, Talks
-data/publications.yml    # All publications data (YAML)
-assets/css/main.css      # Compiled stylesheet
-assets/js/main.min.js    # Theme JS (dark mode, nav)
-assets/webfonts/         # Font Awesome icons
-images/                  # Photos, favicon
-.nojekyll                # Tells GitHub Pages to skip Jekyll
+index.html             # Single-page site (About, News, Experience, Awards, Teaching, Services, Publications)
+data/publications.yml  # All publications data (YAML, loaded client-side via js-yaml)
+assets/css/main.css    # Stylesheet
+assets/js/main.min.js  # Nav, greedy-nav, theme toggle
+assets/js/theme.js     # Dark/light mode persistence
+assets/webfonts/       # Font Awesome icons
+images/                # Photos, favicon
 ```
 
 ## Adding a Publication
@@ -25,12 +22,13 @@ Add a new entry to `data/publications.yml`:
 
 ```yaml
 - title: "Your Paper Title"
-  topic: "Cloud Reliability"
-  authors: "Author One, <u>Minghua Ma</u>, Author Three"
+  topic: AI Agents
+  authors: "Author One, Minghua Ma*"
   category: conference
   venue: "ICSE'26"
   paper: "https://arxiv.org/abs/..."
   code: "https://github.com/..."
+  homepage: "https://project-page.github.io/"
   bibtex: |-
     @inproceedings{key2026,
       title={Your Paper Title},
@@ -40,6 +38,20 @@ Add a new entry to `data/publications.yml`:
     }
 ```
 
-Fields: `title`, `authors`, `category` (survey/conference/journal/workshop), `topic` (Incident Management / LLM & AI Agents / Anomaly Detection / Cloud Reliability / Networking), `venue`, `paper`, `code`, `dataset`, `bibtex`, `award` (all optional except title/authors/category).
+Fields (`*` = required):
+
+| Field | Description |
+|-------|-------------|
+| `title`* | Paper title |
+| `authors`* | Author string; use `*` for corresponding author (e.g. `Minghua Ma*`). `Minghua Ma` is auto-bolded in rendering |
+| `category`* | `conference` \| `journal` \| `workshop` \| `preprint` |
+| `topic`* | Research topic, used for grouping (e.g. `incident management`, `AI Agents`, `Survey/Benchmark`, `anomaly detection`) |
+| `venue` | Short venue label, e.g. `FSE'26` |
+| `paper` | URL to paper PDF / preprint |
+| `code` | URL to code repository |
+| `dataset` | URL to dataset |
+| `homepage` | URL to project homepage |
+| `bibtex` | BibTeX citation (multiline with `\|-`) |
+| `award` | Award text, shown highlighted |
 
 
