@@ -262,7 +262,8 @@
 - title: 'UFO2: The Desktop AgentOS'
   topic: AI Agents
   authors: Chaoyun Zhang, He Huang, Chiming Ni, Jian Mu, Si Qin, Shilin He, Lu Wang, Fangkai Yang, Pu Zhao, Chao Du, Liqun Li, Yu Kang, Zhao Jiang, Suzhen Zheng, Rujia Wang, Jiaxu Qian, Minghua Ma, Jian-Guang Lou, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang
-  category: preprint
+  category: journal
+  venue: TMLR'26
   paper: https://arxiv.org/abs/2504.14603
   code: https://github.com/microsoft/UFO
   bibtex: |-
