@@ -17,22 +17,51 @@
   topic: AI Agents
   authors: Chenyu Zhao, Minghua Ma*, Shenglin Zhang, Zeshun Huang, Yongqian Sun, Chetan Bansal, Saravan Rajmohan, Dan Pei
   category: conference
+  paper: https://arxiv.org/abs/2605.08621
   venue: ISSTA'26
+  bibtex: |-
+    @inproceedings{zhao2026evident,
+      title={EvidenT: An Evidence-Preserving Framework for Iterative System-Level Package Repair},
+      author={Zhao, Chenyu and Ma, Minghua and Zhang, Shenglin and Huang, Zeshun and Sun, Yongqian and Bansal, Chetan and Rajmohan, Saravan and Pei, Dan},
+      booktitle={Proceedings of the ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)},
+      year={2026}
+    }
 - title: 'An Agentic Framework for Triaging Incidents in Production Cloud Infrastructure'
   topic: incident management
   authors: Yuhan Yao, Yuxuan Jiang, Minghua Ma*, Madhura Vaidya, Jieren Deng, Yigong Hu, Chetan Bansal, Ze Li, Murali Chintalapati
   category: conference
   venue: FSE'26
+  bibtex: |-
+    @inproceedings{yao2026agentic,
+      title={An Agentic Framework for Triaging Incidents in Production Cloud Infrastructure},
+      author={Yao, Yuhan and Jiang, Yuxuan and Ma, Minghua and Vaidya, Madhura and Deng, Jieren and Hu, Yigong and Bansal, Chetan and Li, Ze and Chintalapati, Murali},
+      booktitle={Proceedings of the ACM International Conference on the Foundations of Software Engineering (FSE)},
+      year={2026}
+    }
 - title: 'TSGen: Automated Troubleshooting Guide Generation'
   topic: incident management
   authors: Yi Xiao, Hongyu Zhang, Daniel Genkin, Chaoyun Zhang, Rujia Wang, Chetan Bansal, Bhala Ranganathan, Saravan Rajmohan, Minghua Ma*
   category: conference
   venue: FSE'26
+  bibtex: |-
+    @inproceedings{xiao2026tsgen,
+      title={TSGen: Automated Troubleshooting Guide Generation},
+      author={Xiao, Yi and Zhang, Hongyu and Genkin, Daniel and Zhang, Chaoyun and Wang, Rujia and Bansal, Chetan and Ranganathan, Bhala and Rajmohan, Saravan and Ma, Minghua},
+      booktitle={Proceedings of the ACM International Conference on the Foundations of Software Engineering (FSE)},
+      year={2026}
+    }
 - title: 'Aloha: Localizing Batch Failures in Large-scale Cloud Systems via Contrast Analysis and Human-in-the-Loop Agent'
   topic: incident management
   authors: Shenglin Zhang, Yujia Wu, Jinghuan Ren, Yongqian Sun, Wenwei Gu, Chaoyun Zhang, Liqun Li, Qingwei Lin, Dongmei Zhang, Saravan Rajmohan, Chetan Bansal, Minghua Ma*
   category: conference
   venue: FSE'26
+  bibtex: |-
+    @inproceedings{zhang2026aloha,
+      title={Aloha: Localizing Batch Failures in Large-scale Cloud Systems via Contrast Analysis and Human-in-the-Loop Agent},
+      author={Zhang, Shenglin and Wu, Yujia and Ren, Jinghuan and Sun, Yongqian and Gu, Wenwei and Zhang, Chaoyun and Li, Liqun and Lin, Qingwei and Zhang, Dongmei and Rajmohan, Saravan and others},
+      booktitle={Proceedings of the ACM International Conference on the Foundations of Software Engineering (FSE)},
+      year={2026}
+    }
 - title: 'Triage in Software Engineering: A Systematic Review of Research and Practice'
   topic: Survey/Benchmark
   authors: Yongxin Zhao, Shenglin Zhang, Yujia Wu, Yuxin Sun, Yongqian Sun, Dan Pei, Chetan Bansal, Minghua Ma*
@@ -172,6 +201,14 @@
   authors: Jianing Liu, Hao Ren, Yu Kang, Minghua Ma, Fangkai Yang, Yong Xu, Xin Gao, Meng Zhang, Hongbin Wang, Xuedong Gao, Dongmei Zhang, Qi Zhang, Chetan Bansal, Saravan Rajmohan, Yingnong Dang
   category: conference
   venue: ICSE-SEIP'26
+  bibtex: |-
+    @inproceedings{liu2026intelligent,
+      title={Intelligent Triage: Interpretable Incident Triage Workflow using LLM Extracted Triage Reasoning},
+      author={Liu, Jianing and Ren, Hao and Kang, Yu and Ma, Minghua and Yang, Fangkai and Xu, Yong and Gao, Xin and Zhang, Meng and Wang, Hongbin and Gao, Xuedong and others},
+      booktitle={2026 IEEE/ACM 48th International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP)},
+      year={2026},
+      organization={IEEE}
+    }
 - title: A Benchmark for Language Models in Real-World System Building
   topic: AI Agents
   authors: Weilin Jin, Chenyu Zhao, Zeshun Huang, Chaoyun Zhang, Qingwei Lin, Chetan Bansal, Saravan Rajmohan, Shenglin Zhang, Yongqian Sun, Dan Pei, Yifan Wu, Tong Jia, Ying Li, Zhonghai Wu, Minghua Ma*
