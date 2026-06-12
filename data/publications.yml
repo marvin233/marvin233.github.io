@@ -67,6 +67,7 @@
   authors: Yongxin Zhao, Shenglin Zhang, Yujia Wu, Yuxin Sun, Yongqian Sun, Dan Pei, Chetan Bansal, Minghua Ma*
   category: preprint
   paper: https://arxiv.org/abs/2511.08607
+  code: https://github.com/AIOps-Lab-NKU/TriageSurvey
   bibtex: |-
     @Article{zhao2025triage,
      author = {Yongxin Zhao and Shenglin Zhang and Yujia Wu and Yuxin Sun and Yongqian Sun and Dan Pei and Chetan Bansal and Minghua Ma},
